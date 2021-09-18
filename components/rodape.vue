@@ -87,6 +87,15 @@
   padding-left: 50px;
   padding-right: 15px
 }
+@media (max-width: 767px) {
+#footer nav #menu-menu-rodape > li {
+  width: 25%;
+  display: block;
+  float: left;
+  padding-left: 30px;
+  padding-right: 15px
+}
+}
 
 #footer nav #menu-menu-rodape > li > a {
   font-family: "Nunito";

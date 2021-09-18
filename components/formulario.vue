@@ -1,18 +1,16 @@
 <template>
-    <div class="wrapper">
+    <form class="wrapper">
             <div class="title">
               Fale Conosco - Nos mande uma dúvida sobre seu pet!
             </div>
-            <div id="app" class="form">
+            <form id="app" @submit="checkForm" class="form">
                <div class="inputfield">
                   <label>Nome do Pet</label>
                   <input v-model="petName"  type="text" class="input">
-                  <span v-if="false">Campo Obrigatório</span>
                </div>  
                 <div class="inputfield">
                   <label>Nome do Dono</label>
                   <input v-model="name"  type="text" class="input">
-                  <span v-if="false">Campo Obrigatório</span>
                </div>  
             
                 <div class="inputfield">
@@ -27,12 +25,11 @@
                </div> 
                 <div class="inputfield">
                   <label>E-mail</label>
-                  <input type="text" class="input">
+                  <input v-model="email" type="text" class="input">
                </div> 
               <div class="inputfield">
                   <label>Número de Telefone</label>
                   <input v-model="number"  type="text" class="input">
-                  <span v-if="false">Campo Obrigatório</span>
                </div> 
               <div class="inputfield">
                   <label>Mensagem</label>
@@ -48,9 +45,56 @@
               <div class="inputfield">
                 <input type="submit" value="Enviar" class="btn">
               </div>
-            </div>
-        </div>
+            </form>
+    </form>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    const app = new Vue({
+     el: '#app',
+    data: {
+    errors: [],
+    name: null,
+    petName: null,
+    email: null,
+    number: null,
+  },
+  methods:{
+    checkForm: function (e) {
+      if (this.name && this.age) {
+        return true;
+      }
+
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push('O nome é obrigatório.');
+      }
+      if (!this.petName) {
+        this.errors.push('O nome do pet é obrigatório.');
+      }
+
+      if (!this.email) {
+        this.errors.push('O endereço de e-mail é obrigatório.');
+      }
+
+      if (!this.number) {
+        this.errors.push('O número de telefone é obrigatório.');
+      }
+
+      e.preventDefault();
+    }
+  }
+})
+  },
+})
+</script>
+
+
 
 <style scoped>
 /* form */

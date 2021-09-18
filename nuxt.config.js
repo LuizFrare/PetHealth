@@ -15,12 +15,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [{
+      src:'/~/assets/js/script.js'
+    }],
+   
   },
-
-  script: [
-   '~/static/js/script.js'
-],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

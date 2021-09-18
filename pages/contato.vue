@@ -11,7 +11,7 @@
 		</li>
 
 		<li class="breadcrumbs__item">
-			<NuxtLink to="/" class="breadcrumbs__link breadcrumbs__link--active">Contato</NuxtLink>
+			<NuxtLink to="/contato" class="breadcrumbs__link breadcrumbs__link--active">Contato</NuxtLink>
 		</li>
 	      </ul>
       <formulario/>

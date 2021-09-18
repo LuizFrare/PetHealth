@@ -124,8 +124,9 @@ transition: all .5s ease;
 .img {
 background-image: url("~/assets/img/cachorro-inicio.jpg");
 background-size: cover;
+object-fit: cover;
 background-repeat: no-repeat;
-height: 90vh;
+height: 100vh;
 position: relative;
 display: flex;
 min-height: 500px;
@@ -172,6 +173,18 @@ html{
 
 .logo{
     display: none;
+}
+
+.img {
+background-image: url("~/assets/img/cachorro-inicio.jpg");
+background-size: cover;
+object-fit: cover;
+background-repeat: no-repeat;
+height: 10vh;
+position: relative;
+display: flex;
+min-height: 500px;
+width: auto;
 }
 
 #menu-nav {
