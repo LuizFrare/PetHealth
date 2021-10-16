@@ -1,10 +1,10 @@
 <template>
-<main>
+<div>
   <header>
 		<div class="logo">
-            <a href="index.html" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" src="~/assets/img/LogoWhite.png"></a>
+            <a href="index.html" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" :src="require(`~/assets/img/LogoWhite.png`)"></a>
         </div>
-        <nav id="nav">
+        <nav>
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-nav" aria-expanded="false">
               <span id="hamburger"></span>
             </button>
@@ -27,12 +27,21 @@
 					<svg width="50" height="100" viewBox="0 0 70 38" fill="none">
 						<path d="M2 2.5L35 35.5L68 2.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" src="~/assets/img/Logo.svg">
+					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" :src="require(`~/assets/img/Logo.svg`)" >
 			  </div>   
 			</div>
 		</section>
-</main>
+</div>
 </template>
+
+<script>
+export default {
+  data() {
+      titulo:"Clinica PetHealth"
+  }
+}
+</script>
+
 
 <style scoped>
 header a{

@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [{
-      src:'/~/assets/js/script.js'
+      src:'https://unpkg.com/aos@2.3.1/dist/aos.js'
     }],
    
   },

@@ -2,9 +2,9 @@
     <section class="titulo">
         <h2 style="margin-bottom:3em; font-weight: bold;">Cuidamos de todos!</h2>
         <div class="category">
-            <div class="category-1 animate" data-anime="up">
+            <div data-aos="fade-up" class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-green">
-                    <img class="imagemInfDog" src="~/assets/img/dog.png">
+                    <img class="imagemInfDog" :src="require(`~/assets/img/dog.png`)">
                 </div>
                 <div class="containerInformation">
                     <h5 class="greenText" style="padding-top: 4%;">Cachorros</h5>
@@ -18,7 +18,7 @@
             </div>
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-purple">
-                    <img class="imagemInf" src="~/assets/img/cat.png">
+                    <img class="imagemInf" :src="require(`~/assets/img/cat.png`)">
                 </div>
                 <div class="containerInformation">
                     <h5 class="purpleText" style="padding-top: 4%;">Gatos</h5>
@@ -32,7 +32,7 @@
             </div>
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-pink">
-                    <img class="imagemInf marginPc" src="~/assets/img/bird.png">
+                    <img class="imagemInf marginPc" :src="require(`~/assets/img/bird.png`)">
                 </div>
                 <div class="containerInformation">
                     <h5 class="pinkText" style="padding-top: 4%;">Aves</h5>
@@ -265,6 +265,7 @@ html{
   margin-top: 1.9em;
 }
 }
+
 @media (max-width: 880px)
 {
 .containerLetters{
@@ -305,7 +306,7 @@ html{
     font-size: 1.5em;
   }
   .containerInformation{
-    text-align: start;
+    text-align: center;
   }
   
 .imgInformation{
@@ -317,10 +318,22 @@ html{
     margin-bottom: 5em;
   }
 
+.greenText{
+font-size: 1.2em;
+}
+
+.purpleText{
+font-size: 1.2em;
+}
+
+.pinkText{
+font-size: 1.2em;
+}
+
   .card{
     width: 100%;
     min-width: 30em;
-    height: 15em;
+    height: 17em;
   }
 
   .textContent{

@@ -32,9 +32,3 @@ margin-bottom: 5em;
 justify-content: center;
 }
 </style>
-
-
-<script>
-
-</script>
-

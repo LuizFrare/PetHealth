@@ -55,10 +55,13 @@ background-size: cover;
 background-repeat: no-repeat;
 margin-bottom: 5em;
 justify-content: center;
+margin-left: 15px;
+margin-right: 15px;
 }
 
 .Meio{
     text-align: center;
+    font-size: 1.5em;
 }
 
 p {
