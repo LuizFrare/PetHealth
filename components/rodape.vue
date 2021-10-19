@@ -15,10 +15,10 @@
 	<li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Aves</span></a></li>
 	</ul>
 	</li>
-	<li id="menu-item-475" class="menu-item menu-item-type-post_type_archive menu-item-object-exames menu-item-has-children menu-item-475"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Coletas</span></a>
+	<li id="menu-item-475" class="menu-item menu-item-type-post_type_archive menu-item-object-exames menu-item-has-children menu-item-475"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Exames</span></a>
 	<ul class="sub-menu">
 	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-476"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Laboratório</span></a></li>
-	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Acompanhamento</span></a></li>
+	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Vacinas</span></a></li>
 	</ul>
 	</li>
 	<li id="menu-item-478" class="menu-item menu-item-type-post_type_archive menu-item-object-servicos menu-item-has-children menu-item-478"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Raças Famosas</span></a>
