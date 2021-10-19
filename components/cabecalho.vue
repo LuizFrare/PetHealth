@@ -15,7 +15,7 @@
               <li><NuxtLink to="/contato" tag="a">Contato</NuxtLink></li>
             </ul>
           </nav>
-        <button class="buttonHeader"> <nuxt-link to="/coletas.vue">Exames</nuxt-link></button>
+        <button class="buttonHeader"> <NuxtLink to="/coletas" tag="a">Exames</NuxtLink></button>
 		</header>
 		<section class="img">
 			<div class="fundo">
