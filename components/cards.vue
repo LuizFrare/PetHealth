@@ -11,7 +11,7 @@
                     <div class="information">
                         <div class="line"></div>
                         <p class="textoCard">Nosssa clínica é a única do Brasil com Certificação Internacional de Dog Walker, Dog Sitter e Primeiros Socorros para cães. Com profissionais qualificados e equipamentos de última geração, garantimos amor e acolhimento ao seu companheiro.</p>
-                        <button class="buttonInformation borderGreen greenText">Saiba Mais</button>
+                        <button class="buttonInformation borderGreen greenText"><NuxtLink to="/caes" tag="a">Saiba Mais</NuxtLink></button>
                         <div class="totalLine"></div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                     <div class="information">
                         <div class="line"></div>
                         <p class="textoCard">Nós somos especialistas em cuidar do seu gato. Com uma equipe treinada e especializada em comportamento e medicina felina, nós somos a sua melhor opção para manter o bem estar do seu amiguinho.</p>
-                        <button class="buttonInformation2 borderPurple purpleText">Saiba Mais</button>
+                        <button class="buttonInformation2 borderPurple purpleText"><NuxtLink to="/gatos" tag="a">Saiba Mais</NuxtLink></button>
                         <div class="totalLine"></div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="information">
                         <div class="line"></div>
                         <p class="textoCard">Oferecemos um serviço diferenciado para atendimento de Aves Pet, com profissionais especializados com anos de experiência, bem como um local preparado para as suas necessidades, com a finalidade de prover o máximo de acolhimento</p>
-                        <button class="buttonInformation3 borderPink pinkText">Saiba Mais</button>
+                        <button class="buttonInformation3 borderPink pinkText"><NuxtLink to="/aves" tag="a">Saiba Mais</NuxtLink></button>
                     </div>
                 </div>
             </div>
@@ -49,6 +49,10 @@
 
 <style scoped>
 /*cards*/
+a{
+  text-decoration: none;
+}
+
 .card{
 display: flex;
 width: 40em;

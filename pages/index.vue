@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <cabecalho/>
         <section class="element">
           <div class="textoInicial">
@@ -14,7 +14,7 @@
             </div>
        <redes/>
       <rodape/>
-  </div>
+  </main>
 </template>
 
 <style scoped>

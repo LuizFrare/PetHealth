@@ -13,7 +13,6 @@
 	<li id="menu-item-467" class="menu-item menu-item-type-post_type_archive menu-item-object-unidades menu-item-467"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Caninos</span></a></li>
 	<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Felinos</span></a></li>
 	<li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Aves</span></a></li>
-	<li id="menu-item-12224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12224"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Cirurgia</span></a></li>
 	</ul>
 	</li>
 	<li id="menu-item-475" class="menu-item menu-item-type-post_type_archive menu-item-object-exames menu-item-has-children menu-item-475"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Coletas</span></a>
@@ -22,11 +21,10 @@
 	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Acompanhamento</span></a></li>
 	</ul>
 	</li>
-	<li id="menu-item-478" class="menu-item menu-item-type-post_type_archive menu-item-object-servicos menu-item-has-children menu-item-478"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Serviços</span></a>
+	<li id="menu-item-478" class="menu-item menu-item-type-post_type_archive menu-item-object-servicos menu-item-has-children menu-item-478"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Raças Famosas</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-480"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Vacinas</span></a></li>
-	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-488"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Atendimento Veterinário</span></a></li>
-	<li id="menu-item-9840" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-9840"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Banho e Tosa</span></a></li>
+	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-480"><a href="/gatos.vue" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Persa</span></a></li>
+	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-488"><a href="#" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Husky Siberiano</span></a></li>
 	</ul>
 	</li>
 	<li id="menu-item-485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-485"><NuxtLink to="/contato" class="menu-image-title-after" tag="a"><span class="menu-image-title-after menu-image-title">Contato</span></NuxtLink>
