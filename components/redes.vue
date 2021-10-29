@@ -7,17 +7,17 @@
         </div>
 	</div>
     <div class="lastImg">
-        <div class="componentImg animate" data-anime="left">
-            <a href=""><img class="imgC" src="~/assets/img/insta.png" onmouseover="this.src='~/assets/img/insta-hover.png'" onmouseout="this.src='~/assets/img/insta.png'" alt="Instagram"></a>
+        <div class="componentImg">
+            <a href=""><img class="imgC" src="~/assets/img/insta.png" alt="Instagram"></a>
         </div>
-        <div class="componentImg2 animate" data-anime="left">
-            <a href=""><img class="imgD" src="~/assets/img/maps.png"  onmouseover="this.src='~/assets/img/maps-hover.png'" onmouseout="this.src='~/assets/img/maps.png'" alt="Google Maps"></a>
+        <div class="componentImg2">
+            <a href=""><img class="imgD" src="~/assets/img/maps.png" alt="Google Maps"></a>
         </div>
-        <div class="componentImg2 animate" data-anime="left">
-            <a href=""><img class="imgF" src="~/assets/img/face.png" onmouseover="this.src='~/assets/img/face-hover.png'" onmouseout="this.src='~/assets/img/face.png'" alt="Facebook"></a>
+        <div class="componentImg2">
+            <a href=""><img class="imgF" src="~/assets/img/face.png" alt="Facebook"></a>
         </div>
-        <div class="componentImg animate" data-anime="left">
-            <a href=""><img class="imgG" src="~/assets/img/twitter.png" onmouseover="this.src='~/assets/img/twitter-hover.png'" onmouseout="this.src='~/assets/img/twitter.png'" alt="Twitter"></a>
+        <div class="componentImg">
+            <a href=""><img class="imgG" src="~/assets/img/twitter.png" alt="Twitter"></a>
         </div>
     </div>
     </section>
@@ -26,6 +26,14 @@
 <style scoped>
 
 /*redes sociais*/
+
+.facebook{
+    background: url('~/assets/img/face.png');
+}
+
+.facebook:hover{
+   background: url('~/assets/img/face-hover.png'); 
+}
 
 .lastImg{
   width: 100%;
