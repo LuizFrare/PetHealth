@@ -14,6 +14,7 @@
 <style scoped>
 img{
     width: 60rem;
+    border-radius: 5px 40px 5px 20px;
 }
 
 .imagem1{

@@ -1,6 +1,7 @@
 <template>
     <div>
       <cabecalho/>
+	  <bgContato />
         <ul class="breadcrumbs">
 		<li class="breadcrumbs__item">
 			<NuxtLink to="/" class="breadcrumbs__link" tag="a">Início</NuxtLink>

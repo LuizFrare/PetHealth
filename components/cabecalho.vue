@@ -17,31 +17,9 @@
           </nav>
         <button class="buttonHeader"> <NuxtLink to="/coletas" tag="a">Exames</NuxtLink></button>
 		</header>
-		<section class="img">
-			<div class="fundo">
-				<div class="containerLetters">
-					<h1>Clínica PetHealth</h1>
-					<h3>Onde seus melhores amigos se tornam nossos também!</h3>
-				</div> 
-				<div class="svg">
-					<svg width="50" height="100" viewBox="0 0 70 38" fill="none">
-						<path d="M2 2.5L35 35.5L68 2.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" :src="require(`~/assets/img/Logo.svg`)" >
-			  </div>   
-			</div>
-		</section>
+		
 </div>
 </template>
-
-<script>
-export default {
-  data() {
-      titulo:"Clinica PetHealth"
-  }
-}
-</script>
-
 
 <style scoped>
 header a{
@@ -119,54 +97,6 @@ color: #1ba6a3;
 transition: all .5s ease;
 }
 
-.img .fundo {
-  background: linear-gradient(360deg, #00151f 1%, rgba(0, 0, 0, 0.3) 100%);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.img {
-background-image: url("~/assets/img/cachorro-inicio.jpg");
-background-size: cover;
-object-fit: cover;
-background-repeat: no-repeat;
-height: 100vh;
-position: relative;
-display: flex;
-min-height: 500px;
-width: auto;
-}
-
-.containerLetters{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  margin-left: 15em;
-  justify-content: center;
-  padding-top:8em;
-}
-
-.goContent{
-  width: 20em;
-  height: 5em;
-  border:none;
-  background-color: #00A4EF;
-  margin-top: 10em;
-}
-
-.svg{
-  display: flex;
-  width: 100%;
-  margin-left: 15em;
-  padding-right: 30em;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 /* Responsividade */
 
@@ -383,8 +313,4 @@ html{
 }
 
 </style>
-
-<script>
-
-</script>
 
