@@ -1,4 +1,4 @@
-<img src="~/assets/img/Logo.svg" alt="Logo Fatec Matão" title="Logo Fatec Matão" width="80">
+<img src="./assets/img/Logo.svg" alt="Logo Clínica PetHealth" width="80">
 
 # Clínica PetHealth
 
