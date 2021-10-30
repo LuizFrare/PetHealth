@@ -1,8 +1,8 @@
 <template>
     <section class="titulo">
         <h2 style="margin-bottom:3em; font-weight: bold;">Cuidamos de todos!</h2>
-        <div class="category">
-            <div data-aos="fade-up" class="category-1 animate" data-anime="up">
+        <div  data-aos="fade-up" class="category">
+            <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-green">
                     <img class="imagemInfDog" :src="require(`~/assets/img/dog.png`)">
                 </div>

@@ -77,7 +77,7 @@ width: auto;
 }
 
 .img {
-background-image: url("~/assets/img/contatito.jpg");
+background-image: url("~/assets/img/papagaio.jpg");
 background-size: cover;
 object-fit: cover;
 background-repeat: no-repeat;

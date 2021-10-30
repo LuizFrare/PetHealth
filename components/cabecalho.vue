@@ -2,7 +2,7 @@
 <div>
   <header>
 		<div class="logo">
-            <a href="index.html" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" :src="require(`~/assets/img/LogoWhite.png`)"></a>
+            <NuxtLink to="/" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" :src="require(`~/assets/img/LogoWhite.png`)"></NuxtLink>
         </div>
         <nav>
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-nav" aria-expanded="false">
@@ -31,7 +31,7 @@ header{
   display: flex;
   width: 100vw;
   height: 10%;
-  background: linear-gradient(163deg, #3498fd 0%, #0089c9 100%);
+  background:linear-gradient(to right, #00aeff , #0089c9);
   justify-content: space-between;
   min-height: 80px;
 }

@@ -16,6 +16,10 @@
 </template>
 
 <style scoped>
+h1 h3{
+  color:white
+}
+
 .img .fundo {
   background: linear-gradient(360deg, #00151f 1%, rgba(0, 0, 0, 0.3) 100%);
   width: 100%;
@@ -46,6 +50,7 @@ width: auto;
   margin-left: 15em;
   justify-content: center;
   padding-top:8em;
+  color: white;
 }
 
 .goContent{

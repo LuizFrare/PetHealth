@@ -1,13 +1,13 @@
 <template>
     <div class="row">
         <div class="col-sm-6 texto-vantagens" >
-     <br><h2 data-anime="left" class="animate">Quais as principais características<br>dos Persas?</h2><br>
-        <p data-anime="right" class="animate Meio">Peso</p>
-            <p data-anime="left" class="animate">Um exemplar adulto pode chegar entre 3 e 7 quilogramas.</p><br>
-        <p data-anime="right" class="animate Meio">Expectativa de vida:
-            <p data-anime="left" class="animate">Geralmente esses felinos vivem de 10 a 15 anos.</p><br>
-        <p data-anime="right" class="animate Meio">Fácil de cuidar?</p>
-            <p data-anime="left" class="animate">Essa raça é bem carinhosa e meiga, sendo uma ótima opção para qualquer lar.</p><br>
+     <br><h2 data-aos="fade-left" class="">Quais as principais características<br>dos Persas?</h2><br>
+        <h5 data-aos="fade-right" class=" Meio">Peso</h5>
+            <p data-aos="fade-left" class="">Um exemplar adulto pode chegar entre 3 e 7 quilogramas.</p><br>
+        <h5 data-aos="fade-right" class=" Meio">Expectativa de vida:</h5>
+            <p data-aos="fade-left" class="">Geralmente esses felinos vivem de 10 a 15 anos.</p><br>
+        <h5 data-aos="fade-right" class=" Meio">Fácil de cuidar?</h5>
+            <p data-aos="fade-left" class="">Essa raça é bem carinhosa e meiga, sendo uma ótima opção para qualquer lar.</p><br>
     </div>
      <div class="col-sm-6 banner-vantagens" >
      </div>
@@ -15,6 +15,9 @@
 </template>
 
 <style scoped>
+span{
+    margin-bottom:2rem;
+}
 /*banner vantagens do plano*/
 .banner-vantagens{
 background-image: url("~/assets/img/persa.jpg");

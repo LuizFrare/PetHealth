@@ -1,5 +1,8 @@
 <template>
-    <div>
+    <main>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
       <cabecalho/>
 	  <bgContato />
         <ul class="breadcrumbs">
@@ -17,12 +20,12 @@
 	      </ul>
       <formulario/>
         <div class="backgroundFaq">
-          <p class="texto branco marginTexto">Com anos de mercado, tradição e confiança, tomamos todos os cuidados para manter sua felicidade e a do seu pet!</p>
+          <p data-aos="fade-left" class="texto branco marginTexto">Com anos de mercado, tradição e confiança, tomamos todos os cuidados para manter sua felicidade e a do seu pet!</p>
         </div>
       <radio/>
       <redes/>
       <rodape/>  
-    </div>
+    </main>
 </template>
 
 <style scoped>

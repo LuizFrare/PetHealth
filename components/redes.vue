@@ -6,7 +6,7 @@
             <p class="texto">Veja o dia-a-dia de uma clínica veterinária, além de extras e sorteios. </p>
         </div>
 	</div>
-    <div class="lastImg">
+    <div data-aos="fade-right" class="lastImg">
         <div class="componentImg">
             <a href=""><img class="imgC" src="~/assets/img/insta.png" alt="Instagram"></a>
         </div>
@@ -26,14 +26,6 @@
 <style scoped>
 
 /*redes sociais*/
-
-.facebook{
-    background: url('~/assets/img/face.png');
-}
-
-.facebook:hover{
-   background: url('~/assets/img/face-hover.png'); 
-}
 
 .lastImg{
   width: 100%;
@@ -76,4 +68,47 @@
   max-width: 50%;
   min-width: 30px;
   }
+
+  .element{
+display: block;
+padding-bottom: 5em;
+height: auto;
+width: auto;
+}
+
+.textoInicial{
+margin-top: 6em;
+margin-bottom: 3em;
+}
+
+.textoInicial1{
+  margin-top: 6em;
+  margin-bottom: 3em;
+  }
+
+.element2{
+display: block;
+padding-bottom: 3em;
+height: auto;
+width: auto;
+}
+
+.textoFinal{
+margin-top: 3em;
+margin-bottom: 0em;
+}
+
+.texto{
+font-family: "Nunito";
+font-size: 27px;
+color: #7E7E7E;
+text-align: center;
+}
+
+.azulMaroto{
+color:#0089c9;
+font-family: "Nunito";
+text-align: center;
+font-weight: bold;
+}
 </style>
