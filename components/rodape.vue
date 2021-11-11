@@ -8,29 +8,29 @@
 				</div>
 				<div class="col-sm-8">
 					 <nav>
-						<ul id="menu-menu-rodape" class="menu"><li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-466"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Especialidades</span></a>
+						<ul id="menu-menu-rodape" class="menu"><li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-466"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.specialties.specialtiestext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-467" class="menu-item menu-item-type-post_type_archive menu-item-object-unidades menu-item-467"><NuxtLink to="/caes" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Caninos</span></NuxtLink></li>
-	<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><NuxtLink to="/gatos" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Felinos</span></NuxtLink></li>
-	<li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><NuxtLink to="/aves" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Aves</span></NuxtLink></li>
+	<li id="menu-item-467" class="menu-item menu-item-type-post_type_archive menu-item-object-unidades menu-item-467"><NuxtLink to="/caes" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.specialties.canines") }}</span></NuxtLink></li>
+	<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><NuxtLink to="/gatos" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.specialties.cats") }}</span></NuxtLink></li>
+	<li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><NuxtLink to="/aves" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.specialties.birds") }}</span></NuxtLink></li>
 	</ul>
 	</li>
-	<li id="menu-item-475" class="menu-item menu-item-type-post_type_archive menu-item-object-exames menu-item-has-children menu-item-475"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Exames</span></a>
+	<li id="menu-item-475" class="menu-item menu-item-type-post_type_archive menu-item-object-exames menu-item-has-children menu-item-475"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.examstext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-476"><NuxtLink to="/coletas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Laboratório</span></NuxtLink></li>
-	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><NuxtLink to="/coletas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Vacinas</span></NuxtLink></li>
+	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-476"><NuxtLink to="/coletas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.laboratory") }}</span></NuxtLink></li>
+	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><NuxtLink to="/coletas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.vaccines") }}</span></NuxtLink></li>
 	</ul>
 	</li>
-	<li id="menu-item-478" class="menu-item menu-item-type-post_type_archive menu-item-object-servicos menu-item-has-children menu-item-478"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Raças Famosas</span></a>
+	<li id="menu-item-478" class="menu-item menu-item-type-post_type_archive menu-item-object-servicos menu-item-has-children menu-item-478"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.famousracestext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-480"><NuxtLink to="/gatos" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Persa</span></NuxtLink></li>
-	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-488"><NuxtLink to="/caes" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Husky Siberiano</span></NuxtLink></li>
+	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-480"><NuxtLink to="/gatos" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.persian") }}</span></NuxtLink></li>
+	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-488"><NuxtLink to="/caes" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.siberianHusky") }}</span></NuxtLink></li>
 	</ul>
 	</li>
-	<li id="menu-item-485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-485"><a class="menu-image-title-after" tag="a"><span class="menu-image-title-after menu-image-title">Contato</span></a>
+	<li id="menu-item-485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-485"><a class="menu-image-title-after" tag="a"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.contacttext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486"><NuxtLink to="/contato" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Fale Conosco</span></NuxtLink></li>
-	<li id="menu-item-12355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12355"><NuxtLink to="/contato" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">Faça parte da PetHealth</span></NuxtLink></li>
+	<li id="menu-item-486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486"><NuxtLink to="/contato" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.contactus") }}</span></NuxtLink></li>
+	<li id="menu-item-12355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12355"><NuxtLink to="/contato" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.join") }}</span></NuxtLink></li>
 	</ul>
 	</li>
 	</ul>            
@@ -40,11 +40,32 @@
 		</div>
 	</footer>
 	<div class="informacoesContato">
-		<p class="TextoInformacoes">Centro Veterinário LTDA - Copyright ® 2021 PetHealth - Todos os direitos reservados</p>
+		<p class="TextoInformacoes">{{ $t("footer.subfooter.text1") }}</p>
+    <a
+    href="#"
+  v-for="locale in availableLocales"
+  :key="locale.code"
+  @click.prevent="switchLocalePatch(locale.code)"
+  >
+  {{locale.name}}
+  </a>
 	</div>
     </section>
 </template>
-
+<script>
+export default {
+  computed: {
+  availableLocales () {
+    return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+  },
+},
+methods: {
+  switchLocalePatch(code) {
+   this.$i18n.setLocale(code)
+  }
+}
+}
+</script>
 <style scoped>
 /* Rodapé */
 #footer {

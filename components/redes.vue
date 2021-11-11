@@ -3,8 +3,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
     <div id="new" class="element2">
         <div class="textoFinal">
-            <p class="texto"><span class="azulMaroto">Gostou do nosso conteúdo?</span>  Acomapanhe a PetHealth em nossas redes sociais!</p>
-            <p class="texto">Veja o dia-a-dia de uma clínica veterinária, além de extras e sorteios. </p>
+            <p class="texto"><span class="azulMaroto">{{ $t("networks.textblue") }}</span>  {{ $t("networks.text2") }}</p>
+            <p class="texto">{{ $t("networks.text3") }} </p>
         </div>
 	</div>
     <div class="lastImg">

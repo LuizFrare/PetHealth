@@ -1,17 +1,17 @@
 <template>
     <section class="titulo">
-        <h2 style="margin-bottom:3em; font-weight: bold;">Cuidamos de todos!</h2>
+        <h2 style="margin-bottom:3em; font-weight: bold;">{{ $t("textblue2") }}</h2>
         <div  data-aos="fade-up" class="category">
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-green">
                     <nuxt-img class="imagemInfDog" :src="Cachorro"/>
                 </div>
                 <div class="containerInformation">
-                    <h5 class="greenText" style="padding-top: 4%;">Cachorros</h5>
+                    <h5 class="greenText" style="padding-top: 4%;">{{ $t("carddog.text1") }}</h5>
                     <div class="information">
                         <div class="line"></div>
-                        <p class="textoCard">Nosssa clínica é a única do Brasil com Certificação Internacional de Dog Walker, Dog Sitter e Primeiros Socorros para cães. Com profissionais qualificados e equipamentos de última geração, garantimos amor e acolhimento ao seu companheiro.</p>
-                        <button class="buttonInformation borderGreen greenText"><NuxtLink class="greenText" to="/caes">Saiba Mais</NuxtLink></button>
+                        <p class="textoCard">{{ $t("carddog.text2") }}</p>
+                        <button class="buttonInformation borderGreen greenText"><NuxtLink class="greenText" to="/caes">{{ $t("knowmore") }}</NuxtLink></button>
                         <div class="totalLine"></div>
                     </div>
                 </div>
@@ -21,11 +21,11 @@
                     <nuxt-img class="imagemInf" :src="Gato"/>
                 </div>
                 <div class="containerInformation">
-                    <h5 class="purpleText" style="padding-top: 4%;">Gatos</h5>
+                    <h5 class="purpleText" style="padding-top: 4%;">{{ $t("cardcat.text1") }}</h5>
                     <div class="information">
                         <div class="line"></div>
-                        <p class="textoCard">Nós somos especialistas em cuidar do seu gato. Com uma equipe treinada e especializada em comportamento e medicina felina, nós somos a sua melhor opção para manter o bem estar do seu amiguinho.</p>
-                        <button class="buttonInformation2 borderPurple purpleText"><NuxtLink class="purpleText" to="/gatos">Saiba Mais</NuxtLink></button>
+                        <p class="textoCard">{{ $t("cardcat.text2") }}</p>
+                        <button class="buttonInformation2 borderPurple purpleText"><NuxtLink class="purpleText" to="/gatos">{{ $t("knowmore") }}</NuxtLink></button>
                         <div class="totalLine"></div>
                     </div>
                 </div>
@@ -35,11 +35,11 @@
                     <nuxt-img class="imagemInf marginPc" :src="Passaro"/>
                 </div>
                 <div class="containerInformation">
-                    <h5 class="pinkText" style="padding-top: 4%;">Aves</h5>
+                    <h5 class="pinkText" style="padding-top: 4%;">{{ $t("cardbird.text1") }}</h5>
                     <div class="information">
                         <div class="line"></div>
-                        <p class="textoCard">Oferecemos um serviço diferenciado para atendimento de Aves Pet, com profissionais especializados com anos de experiência, bem como um local preparado para as suas necessidades, com a finalidade de prover o máximo de acolhimento</p>
-                        <button class="buttonInformation3 borderPink pinkText"><NuxtLink class="pinkText" to="/aves">Saiba Mais</NuxtLink></button>
+                        <p class="textoCard">{{ $t("cardbird.text2") }}</p>
+                        <button class="buttonInformation3 borderPink pinkText"><NuxtLink class="pinkText" to="/aves">{{ $t("knowmore") }}</NuxtLink></button>
                     </div>
                 </div>
             </div>

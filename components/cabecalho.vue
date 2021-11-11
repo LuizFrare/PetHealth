@@ -18,6 +18,7 @@
         <button class="buttonHeader"> <NuxtLink to="/coletas" tag="a">{{ $t("menu.exams") }}</NuxtLink></button>
 		</header>
 		
+    
 </div>
 </template>
 <style scoped>

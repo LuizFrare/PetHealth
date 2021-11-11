@@ -48,12 +48,14 @@ export default {
     locales: [
       {
         code: 'en',
-        file: 'en-US.js'
+        file: 'en-US.js',
+        name: 'English'
       },
 
       {
         code: 'pt',
-        file: 'pt-BR.js'
+        file: 'pt-BR.js',
+        name: "Português"
       }
     ],
     langDir: 'locales',

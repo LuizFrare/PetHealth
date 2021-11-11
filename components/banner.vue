@@ -3,15 +3,15 @@
      <div class="col-sm-6 banner-vantagens" >
      </div>
       <div class="col-sm-6 texto-vantagens" >
-     <br><h2 data-aos="fade-left" class="Meio">Quais as vantagens de ter<br>um de nossos planos de saúde<br>para pets?</h2><br>
-        <h5 data-aos="fade-left" class="Meio">+Preço igual pra todo mundo!</h5>
-            <p data-aos="fade-right">Nossa política de preços para os planos de saúde é garantir o mesmo valor, para a mesma cobertura pet, independente do porte ou raça.</p><br>
-        <h5 data-aos="fade-left" class="Meio">+Seu pet de carteirinha eletrônica.</h5>
-            <p data-aos="fade-right">Não é obrigatório que seu pet tenha microchip, afinal não serve como localizador e nós consideramos como um procedimento invasivo. Nosso processo de identificação é todo digital.</p><br>
-        <h5 data-aos="fade-left" class=" Meio">+Emergência 24hrs</h5>
-            <p data-aos="fade-right" >Contratando nossos planos, todos contam com cobertura de atendimento para urgência e emergência 24 horas por dias, em todo Brasil</p><br>
-        <h5 data-aos="fade-left" class=" Meio">+Cobertura completa, nacional!</h5>
-            <p data-aos="fade-right" >Independente do plano contratado, seu pet tem cobertura nacional e a Internacional*, na modalidade de Reembolso.</p><br>
+     <br><h2 data-aos="fade-left" class="Meio">{{ $t("banner1.text1") }}<br>{{ $t("banner1.text2") }}<br>{{ $t("banner1.text3") }}</h2><br>
+        <h5 data-aos="fade-left" class="Meio">{{ $t("banner1.text4") }}</h5>
+            <p data-aos="fade-right">{{ $t("banner1.text5") }}</p><br>
+        <h5 data-aos="fade-left" class="Meio">{{ $t("banner1.text6") }}</h5>
+            <p data-aos="fade-right">{{ $t("banner1.text7") }}</p><br>
+        <h5 data-aos="fade-left" class=" Meio">{{ $t("banner1.text8") }}</h5>
+            <p data-aos="fade-right" >{{ $t("banner1.text9") }}</p><br>
+        <h5 data-aos="fade-left" class=" Meio">{{ $t("banner1.text10") }}</h5>
+            <p data-aos="fade-right" >{{ $t("banner1.text11") }}</p><br>
     </div>
  </div>
 </template>
