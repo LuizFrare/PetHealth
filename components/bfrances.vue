@@ -16,7 +16,7 @@
 <style scoped>
 /*banner vantagens do plano*/
 .banner-vantagens{
-background-image: url("~/assets/img/bfrances.jpg");
+background-image: url("~/static/img/bfrances.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 display: flex;

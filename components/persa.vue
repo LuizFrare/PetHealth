@@ -20,7 +20,7 @@ span{
 }
 /*banner vantagens do plano*/
 .banner-vantagens{
-background-image: url("~/assets/img/persa.jpg");
+background-image: url("~/static/img/persa.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 display: flex;

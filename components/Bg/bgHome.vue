@@ -2,20 +2,24 @@
     <section class="img">
 			<div class="fundo">
 				<div class="containerLetters">
-					<h1>Clínica PetHealth</h1>
-					<h3>Onde seus melhores amigos se tornam nossos também!</h3>
+					<h1>{{ $t("textheader") }}</h1>
+					<h3>{{ $t("textheader2") }}</h3>
 				</div> 
 				<div class="svg">
 					<svg width="50" height="100" viewBox="0 0 70 38" fill="none">
 						<path d="M2 2.5L35 35.5L68 2.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" :src="require(`~/assets/img/Logo.svg`)" >
+					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" :src="require(`~/static/img/Logo.svg`)" >
 			  </div>   
 			</div>
 		</section>
 </template>
 
 <style scoped>
+h1 h3{
+  color:white
+}
+
 .img .fundo {
   background: linear-gradient(360deg, #00151f 1%, rgba(0, 0, 0, 0.3) 100%);
   width: 100%;
@@ -28,7 +32,7 @@
 }
 
 .img {
-background-image: url("~/assets/img/papagaio.jpg");
+background-image: url("~/static/img/cachorro-inicio.jpg");
 background-size: cover;
 object-fit: cover;
 background-repeat: no-repeat;
@@ -46,6 +50,7 @@ width: auto;
   margin-left: 15em;
   justify-content: center;
   padding-top:8em;
+  color: white;
 }
 
 .goContent{
@@ -77,7 +82,7 @@ width: auto;
 }
 
 .img {
-background-image: url("~/assets/img/papagaio.jpg");
+background-image: url("~/static/img/cachorro-inicio.jpg");
 background-size: cover;
 object-fit: cover;
 background-repeat: no-repeat;

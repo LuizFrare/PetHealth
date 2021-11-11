@@ -17,7 +17,7 @@
 <style scoped>
 /*banner vantagens do plano*/
 .banner-vantagens{
-background-image: url("~/assets/img/splitz.jpg");
+background-image: url("~/static/img/splitz.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 display: flex;

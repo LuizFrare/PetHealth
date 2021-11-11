@@ -3,7 +3,6 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-      <cabecalho/>
 	  <bgContato />
         <ul class="breadcrumbs">
 		<li class="breadcrumbs__item">
@@ -24,7 +23,6 @@
         </div>
       <radio/>
       <redes/>
-      <rodape/>  
     </main>
 </template>
 
@@ -34,7 +32,7 @@
 width: 100vw;
 height: 35em;
 background-image:linear-gradient(rgba(0, 0, 0, 0.479), 
-#00151fa6), url("~/assets/img/contact.jpg");
+#00151fa6), url("~/static/img/contact.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position-y: center;

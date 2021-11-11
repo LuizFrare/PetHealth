@@ -6,7 +6,7 @@
              <p class="texto"> adequadamente quando filhotes e se mantiverem a vacinação anual.</p>
           </div>
           <div class="imagem1">
-            <img :src="require(`~/assets/img/vacina.jpg`)" alt="Laboratório">
+            <img :src="require(`~/static/img/vacina.jpg`)" alt="Laboratório">
         </div>
         </div>
 </template>

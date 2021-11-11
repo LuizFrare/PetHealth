@@ -3,18 +3,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <cabecalho />
-        <bgIndex />
+        <BgHome/>
         <section class="element">
             <div class="textoInicial">
                 <p class="texto">
-                    <span class="azulMaroto">Aqui na PetHealth,</span> nosso
-                    amor tem forma e tamanho, um mundo de quatro patas!
+                    <span class="azulMaroto">{{ $t("textblue") }}</span> {{ $t("texthome1") }}
                 </p>
                 <p class="texto">
-                    Contamos com profissionais capacitados e os melhores
-                    dispositivos para garantir que seu companheiro continue
-                    sendo feliz.
+                    {{ $t("texthome2") }}
                 </p>
             </div>
         </section>
@@ -22,12 +18,10 @@
         <cards />
         <div class="background">
             <p data-aos="fade-left" class="texto branco marginTexto">
-                Com anos de mercado, tradição e confiança, tomamos todos os
-                cuidados para manter sua felicidade e a do seu pet!
+                {{ $t("texthome3") }}
             </p>
         </div>
         <redes />
-        <rodape />
     </main>
 </template>
 
@@ -266,7 +260,7 @@ html{
     width: 100vw;
     height: 30em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.479), #00151fa6),
-        url('~/assets/img/img-slide01.jpg');
+        url('~/static/img/img-slide01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;

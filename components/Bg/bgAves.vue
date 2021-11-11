@@ -9,7 +9,7 @@
 					<svg width="50" height="100" viewBox="0 0 70 38" fill="none">
 						<path d="M2 2.5L35 35.5L68 2.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" :src="require(`~/assets/img/Logo.svg`)" >
+					<img class="logoImg" alt="imagem da logo" style="height: 100%; width: 100%; max-width: 136px;" :src="require(`~/static/img/Logo.svg`)" >
 			  </div>   
 			</div>
 		</section>
@@ -28,7 +28,7 @@
 }
 
 .img {
-background-image: url("~/assets/img/caozito.jpg");
+background-image: url("~/static/img/papagaio.jpg");
 background-size: cover;
 object-fit: cover;
 background-repeat: no-repeat;
@@ -77,7 +77,7 @@ width: auto;
 }
 
 .img {
-background-image: url("~/assets/img/caozito.jpg");
+background-image: url("~/static/img/papagaio.jpg");
 background-size: cover;
 object-fit: cover;
 background-repeat: no-repeat;

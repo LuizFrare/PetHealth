@@ -35,11 +35,34 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  target: 'static',
   buildModules: [
+    '@nuxt/image',
   ],
+
+  i18n: {
+    strategy: "no_prefix",
+    detectBrowserLanguage: {
+      useCookie: true
+    },
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.js'
+      },
+
+      {
+        code: 'pt',
+        file: 'pt-BR.js'
+      }
+    ],
+    langDir: 'locales',
+    defaultLocale: 'en'
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/i18n',
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios

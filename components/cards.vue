@@ -4,7 +4,7 @@
         <div  data-aos="fade-up" class="category">
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-green">
-                    <img class="imagemInfDog" :src="require(`~/assets/img/dog.png`)">
+                    <nuxt-img class="imagemInfDog" :src="Cachorro"/>
                 </div>
                 <div class="containerInformation">
                     <h5 class="greenText" style="padding-top: 4%;">Cachorros</h5>
@@ -18,7 +18,7 @@
             </div>
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-purple">
-                    <img class="imagemInf" :src="require(`~/assets/img/cat.png`)">
+                    <nuxt-img class="imagemInf" :src="Gato"/>
                 </div>
                 <div class="containerInformation">
                     <h5 class="purpleText" style="padding-top: 4%;">Gatos</h5>
@@ -32,7 +32,7 @@
             </div>
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-pink">
-                    <img class="imagemInf marginPc" :src="require(`~/assets/img/bird.png`)">
+                    <nuxt-img class="imagemInf marginPc" :src="Passaro"/>
                 </div>
                 <div class="containerInformation">
                     <h5 class="pinkText" style="padding-top: 4%;">Aves</h5>
@@ -46,6 +46,18 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return { 
+      Cachorro: 'img/dog.png',
+      Gato:'img/cat.png',
+      Passaro:'img/bird.png',
+    }
+  },
+}
+</script>
 
 <style scoped>
 /*cards*/
