@@ -18,5 +18,7 @@
     "nuxt": "^2.15.7",
     "vuelidate": "^0.7.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/image": "^0.6.0"
+  }
 }

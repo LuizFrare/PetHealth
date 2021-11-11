@@ -3,8 +3,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <cabecalho />
-        <bgIndex />
+        <BgHome/>
         <section class="element">
             <div class="textoInicial">
                 <p class="texto">
@@ -27,7 +26,6 @@
             </p>
         </div>
         <redes />
-        <rodape />
     </main>
 </template>
 
@@ -266,7 +264,7 @@ html{
     width: 100vw;
     height: 30em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.479), #00151fa6),
-        url('~/assets/img/img-slide01.jpg');
+        url('~/static/img/img-slide01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;

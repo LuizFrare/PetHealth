@@ -2,10 +2,10 @@
 <div>
   <header>
 		<div class="logo">
-            <NuxtLink to="/" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" :src="require(`~/assets/img/LogoWhite.png`)"></NuxtLink>
+            <NuxtLink to="/" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" :src="require(`~/static/img/LogoWhite.png`)"></NuxtLink>
         </div>
         <nav>
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-nav" aria-expanded="false">
+            <button style="display:none">
               <span id="hamburger"></span>
             </button>
             <ul id="menu-nav" role="menu-nav">
@@ -20,7 +20,6 @@
 		
 </div>
 </template>
-
 <style scoped>
 header a{
     text-decoration: none;
@@ -115,7 +114,7 @@ html{
 }
 
 .img {
-background-image: url("~/assets/img/cachorro-inicio.jpg");
+background-image: url("~/static/img/cachorro-inicio.jpg");
 background-size: cover;
 object-fit: cover;
 background-repeat: no-repeat;

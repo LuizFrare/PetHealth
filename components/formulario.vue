@@ -1,97 +1,92 @@
 <template>
     <form class="wrapper">
             <div class="title">
-              Fale Conosco - Nos mande uma dúvida sobre seu pet!
+              {{name}}
             </div>
-            <form id="app" @submit="checkForm" class="form">
+            <form class="form">
                <div class="inputfield">
                   <label>Nome do Pet</label>
-                  <input v-model="petName"  type="text" class="input">
+                  <input  type="text" class="input" v-model="contact.pet">
                </div>  
                 <div class="inputfield">
                   <label>Nome do Dono</label>
-                  <input v-model="name"  type="text" class="input">
+                  <input type="text" class="input" v-model="contact.name">
                </div>  
             
                 <div class="inputfield">
                   <label>Gênero</label>
                   <div class="custom_select">
-                    <select>
+                    <select v-model="contact.gender">
                       <option value="">Selecionar</option>
-                      <option value="male">Macho</option>
-                      <option value="female">Fêmea</option>
+                      <option value="Macho">Macho</option>
+                      <option value="Femea">Fêmea</option>
                     </select>
                   </div>
                </div> 
                 <div class="inputfield">
                   <label>E-mail</label>
-                  <input v-model="email" type="text" class="input">
+                  <input type="text" class="input" v-model="contact.email">
                </div> 
               <div class="inputfield">
                   <label>Número de Telefone</label>
-                  <input v-model="number"  type="text" class="input">
+                  <input type="text" class="input" v-model="contact.number">
                </div> 
               <div class="inputfield">
                   <label>Mensagem</label>
-                  <textarea class="textarea"></textarea>
+                  <textarea class="textarea" v-model="contact.text"></textarea>
                </div>  
               <div class="inputfield terms">
                   <label class="check">
-                    <input type="checkbox">
+                    <input type="checkbox" v-model="contact.check">
                     <span class="checkmark"></span>
                   </label>
                   <p>Concordo com os termos de privacidade</p>
                </div> 
               <div class="inputfield">
-                <input type="submit" value="Enviar" class="btn">
+                <input value="Enviar" class="btn" v-on:click.prevent="saveContact(contact)">
               </div>
             </form>
     </form>
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { validationMixin } from "~/node_modules/vuelidate/";
+import { required, email, minLength } from "~/node_modules/vuelidate/lib/validators/index"; 
 
-export default defineComponent({
-  setup() {
-    const app = new Vue({
-     el: '#app',
-    data: {
-    errors: [],
-    name: null,
-    petName: null,
-    email: null,
-    number: null,
-  },
-  methods:{
-    checkForm: function (e) {
-      if (this.name && this.age) {
-        return true;
+export default {
+  mixins: [validationMixin],
+    data () {
+      return{
+         name: 'FALE CONOSCO - NOS MANDE UMA DÚVIDA SOBRE SEU PET!',
+         contact:{
+           name:'',
+           pet:'',
+           gender:'',
+           email:'',
+           text:'',
+           check:'',
+           number:'',
+         }
       }
+    },
+    methods:{
+      saveContact(contact){
+        let contacts = localStorage.getItem('contacts');
 
-      this.errors = [];
+        if(contacts){
+          //atualizar contatos
+          contacts = JSON.parse(contacts);
+          contacts.push(contact);
+        } else {
+          //cria chave contatos
+          contacts = [contact];
+        }
 
-      if (!this.name) {
-        this.errors.push('O nome é obrigatório.');
+        //atualizar local storage independemente de novo contato ou nova adição
+        localStorage.setItem('contacts', JSON.stringify(contacts))
+        }
       }
-      if (!this.petName) {
-        this.errors.push('O nome do pet é obrigatório.');
-      }
-
-      if (!this.email) {
-        this.errors.push('O endereço de e-mail é obrigatório.');
-      }
-
-      if (!this.number) {
-        this.errors.push('O número de telefone é obrigatório.');
-      }
-
-      e.preventDefault();
     }
-  }
-})
-  },
-})
 </script>
 
 

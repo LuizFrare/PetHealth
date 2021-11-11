@@ -1,27 +1,41 @@
 <template>
     <section>
-    <div class="element2">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+    <div id="new" class="element2">
         <div class="textoFinal">
             <p class="texto"><span class="azulMaroto">Gostou do nosso conteúdo?</span>  Acomapanhe a PetHealth em nossas redes sociais!</p>
             <p class="texto">Veja o dia-a-dia de uma clínica veterinária, além de extras e sorteios. </p>
         </div>
 	</div>
-    <div data-aos="fade-right" class="lastImg">
+    <div class="lastImg">
         <div class="componentImg">
-            <a href=""><img class="imgC" src="~/assets/img/insta.png" alt="Instagram"></a>
+            <a href=""><nuxt-img class="imgC" :src="Instagram" alt="Instagram"/></a>
         </div>
         <div class="componentImg2">
-            <a href=""><img class="imgD" src="~/assets/img/maps.png" alt="Google Maps"></a>
+            <a href=""><nuxt-img class="imgD" :src="Maps" alt="Google Maps"/></a>
         </div>
         <div class="componentImg2">
-            <a href=""><img class="imgF" src="~/assets/img/face.png" alt="Facebook"></a>
+            <a href=""><nuxt-img class="imgF" :src="Facebook" alt="Facebook"/></a>
         </div>
         <div class="componentImg">
-            <a href=""><img class="imgG" src="~/assets/img/twitter.png" alt="Twitter"></a>
+            <a href=""><nuxt-img class="imgG" :src="Twitter" alt="Twitter"/></a>
         </div>
     </div>
     </section>
     </template>
+
+<script>
+export default {
+  data() {
+    return { 
+      Facebook: 'img/face.png',
+      Twitter:'img/twitter.png',
+      Maps:'img/maps.png',
+      Instagram:'img/insta.png',
+    }
+  },
+}
+</script>
 
 <style scoped>
 
@@ -52,6 +66,10 @@
   .imgF{
   max-width: 50%;
   min-width: 30px;
+  }
+
+  .imgF:hover{
+        background-image: url('~/static/img/twitter-hover.png');
   }
   
   .imgD{

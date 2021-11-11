@@ -16,7 +16,7 @@
 <style scoped>
 /*banner vantagens do plano*/
 .banner-vantagens{
-background-image: url("~/assets/img/maine.png");
+background-image: url("~/static/img/maine.png");
 background-size: cover;
 background-repeat: no-repeat;
 display: flex;

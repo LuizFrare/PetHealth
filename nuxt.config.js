@@ -29,13 +29,16 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src: '~/plugins/Vuelidate'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  target: 'static',
   buildModules: [
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,7 +54,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ["aos"]
+    vendor: ["aos", 'vuelidate']
   },
   plugins:[{src:"~~/plugins/aos", ssr:false}],
   css:["aos/dist/aos.css"]
