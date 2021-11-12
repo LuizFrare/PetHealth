@@ -2,9 +2,9 @@
 <div>
   <header>
 		<div class="logo">
-            <NuxtLink to="/" class="logoImg"><img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" :src="require(`~/static/img/LogoWhite.png`)"></NuxtLink>
+            <NuxtLink to="/" class="logoImg"><nuxt-img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" src="img/LogoWhite.png"/></NuxtLink>
         </div>
-        <nav>
+            <nav>
             <button style="display:none">
               <span id="hamburger"></span>
             </button>
@@ -21,6 +21,22 @@
     
 </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        { url: "/", text: this.$t("menu.home") },
+        { url: "/gatos", text: this.$t("menu.cat") },
+        { url: "/caes", text: this.$t("menu.dog") },
+        { url: "/contato", text: this.$t("menu.contact") },
+      ],
+    };
+  },
+}
+</script>
+
 <style scoped>
 header a{
     text-decoration: none;
@@ -53,7 +69,6 @@ transition: all .5s ease;
   list-style: none;
   gap: 2rem;
 }
-
 #menu-nav a {
   display: block;
   padding: 1.5rem;
@@ -133,7 +148,7 @@ width: auto;
   top: 70px;
   right: 0px;
   background: #0089c9;
-  transition: 0.6s;
+  transition: 0s;
   z-index: 1000;
   height: 0px;
   visibility: hidden;
@@ -141,63 +156,10 @@ width: auto;
 }
 
 .buttonHeader{
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
-#nav{
-    margin-left: 30px;
-}
 
-#nav.active #menu-nav {
-  height: calc(100vh - 70px);
-  visibility: visible;
-  overflow-y: auto;
-}
-
-#menu-nav a {
-  padding: 1rem 0;
-  margin: 5em 5em;
-  text-align: center;
-}
-
-#btn-mobile {
-display: flex;
-padding: 0.5rem 1rem;
-font-size: 1rem;
-border: none;
-background: none;
-cursor: pointer;
-gap: 0.5rem;
-align-self: center;
-color:white
-}
-
-#hamburger {
-  border-top: 2px solid;
-  width: 20px;
-}
-
-#hamburger::after,
-#hamburger::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  margin-top: 5px;
-  transition: 0.3s;
-  position: relative;
-}
-#nav.active #hamburger {
-  border-top-color: transparent;
-}
-#nav.active #hamburger::before {
-  transform: rotate(135deg);
-}
-#nav.active #hamburger::after {
-  transform: rotate(-135deg);
-  top: -7px;
-}
 
 .containerLetters{
   display: block;

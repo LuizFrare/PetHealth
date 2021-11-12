@@ -2,6 +2,9 @@
     <div class="row">
         <div class="col-sm-6 banner-vantagens" ></div>
         <div class="col-sm-6 texto-vantagens" >
+            <div class="imgradial">
+            <img data-aos="fade-in" class="caozinho" src="~/static/img/bfrancesr.jpg">
+            </div>
      <br><h2 data-aos="fade-left">{{ $t("dogspage.bannerbuldogue.text1") }}<br>{{ $t("dogspage.bannerbuldogue.text2") }}</h2><br>
         <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannerbuldogue.text3") }}</h5>
             <p data-aos="fade-left">{{ $t("dogspage.bannerbuldogue.text4") }}</p><br>

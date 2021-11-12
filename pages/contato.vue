@@ -6,7 +6,7 @@
 	  <bgContato />
         <ul class="breadcrumbs">
 		<li class="breadcrumbs__item">
-			<NuxtLink to="/" class="breadcrumbs__link" tag="a">Início</NuxtLink>
+			<NuxtLink to="/" class="breadcrumbs__link" tag="a">{{ $t("menu.home") }}</NuxtLink>
 		</li>
 
 		<li class="breadcrumbs__item">
@@ -14,7 +14,7 @@
 		</li>
 
 		<li class="breadcrumbs__item">
-			<NuxtLink to="/contato" class="breadcrumbs__link breadcrumbs__link--active">Contato</NuxtLink>
+			<NuxtLink to="/contato" class="breadcrumbs__link breadcrumbs__link--active">{{ $t("menu.contact") }}</NuxtLink>
 		</li>
 	      </ul>
       <formulario/>

@@ -1,8 +1,8 @@
 export default {
 menu: {
-        home: "Home",
+        home: "Início",
         cat: "Gatos",
-        dog: "Cachorros",
+        dog: "Cães",
         contact: "Contato",
         exams: "Exames"
 },

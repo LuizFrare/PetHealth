@@ -1,6 +1,9 @@
 <template>
     <div class="row">
         <div class="col-sm-6 texto-vantagens" >
+            <div class="imgradial">
+            <img data-aos="fade-in" class="caozinho" src="~/static/img/huskyr.jpg">
+            </div>
      <br><h2 data-aos="fade-left">{{ $t("dogspage.bannerhuskys.text1") }} <br>{{ $t("dogspage.bannerhuskys.text2") }}</h2><br>
         <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannerhuskys.text3") }} </h5>
             <p data-aos="fade-left">{{ $t("dogspage.bannerhuskys.text4") }}</p><br>

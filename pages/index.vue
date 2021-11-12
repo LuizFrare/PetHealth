@@ -212,25 +212,11 @@ border-radius: 3px;
 
 }
 
-/*menu responsivo*/
-@media (max-width: 1000px)
-{
-html{
-    font-size: 95%;
-}
-.item{
-    font-size: 1.1em;
-}
-
-
-}
-
-
 /*responsividade fontes*/
 @media (max-width: 1000px)
 {
 html{
-    font-size: 70%;
+    font-size: 80%;
 }
 .item{
     font-size: 1.1em;
@@ -267,5 +253,25 @@ html{
     display: flex;
     margin-bottom: 5em;
     justify-content: center;
+}
+
+.caozinho{
+    border-radius: 5000px;
+    height: 7rem;
+}
+
+.imgradial{
+    display:none;
+    align-items:center;
+    justify-content:center;
+}
+
+@media (max-width: 575px)
+{
+ .imgradial{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 }
 </style>
