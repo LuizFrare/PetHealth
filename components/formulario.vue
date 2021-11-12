@@ -1,64 +1,73 @@
 <template>
     <form class="wrapper">
             <div class="title">
-              {{name}}
+              {{$t("contactus.form1.text1")}}
             </div>
             <form class="form">
                <div class="inputfield">
-                  <label>Nome do Pet</label>
+                  <label>{{$t("contactus.form1.text2")}}</label>
                   <input  type="text" class="input" v-model="contact.pet">
                </div>  
                 <div class="inputfield">
-                  <label>Nome do Dono</label>
+                  <label>{{$t("contactus.form1.text3")}}</label>
                   <input type="text" class="input" v-model="contact.name">
                </div>  
             
                 <div class="inputfield">
-                  <label>Gênero</label>
+                  <label>{{$t("contactus.form1.text4")}}</label>
                   <div class="custom_select">
-                    <select>
-                      <option value="">Selecionar</option>
-                      <option value="male">Macho</option>
-                      <option value="female">Fêmea</option>
+                    <select v-model="contact.gender">
+                      <option value="">{{$t("contactus.form1.text10")}}</option>
+                      <option value="Macho">{{$t("contactus.form1.text11")}}</option>
+                      <option value="Femea">{{$t("contactus.form1.text12")}}</option>
                     </select>
                   </div>
                </div> 
                 <div class="inputfield">
-                  <label>E-mail</label>
+                  <label>{{$t("contactus.form1.text5")}}</label>
                   <input type="text" class="input" v-model="contact.email">
                </div> 
               <div class="inputfield">
-                  <label>Número de Telefone</label>
+                  <label>{{$t("contactus.form1.text6")}}</label>
                   <input type="text" class="input" v-model="contact.number">
                </div> 
               <div class="inputfield">
-                  <label>Mensagem</label>
+                  <label>{{$t("contactus.form1.text7")}}</label>
                   <textarea class="textarea" v-model="contact.text"></textarea>
                </div>  
               <div class="inputfield terms">
                   <label class="check">
-                    <input type="checkbox">
+                    <input type="checkbox" v-model="contact.check">
                     <span class="checkmark"></span>
                   </label>
-                  <p>Concordo com os termos de privacidade</p>
+                  <p>{{$t("contactus.form1.text8")}}</p>
                </div> 
               <div class="inputfield">
-                <input value="Enviar" class="btn" v-on:click.prevent="saveContact(contact)">
+                <button class="btn" v-on:click.prevent="saveContact (contact) ">{{$t("contactus.form1.text9")}}</button>
               </div>
             </form>
     </form>
 </template>
 
 <script>
+
 export default {
+
+
     data () {
       return{
-         name: 'FALE CONOSCO - NOS MANDE UMA DÚVIDA SOBRE SEU PET!',
+        
          contact:{
            name:'',
            pet:'',
+
            email:'',
            text:'',
+
+           gender:'',
+
+           check:'',
+
            number:'',
          }
       }
