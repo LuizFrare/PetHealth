@@ -1,16 +1,22 @@
 <template>
-    <div class="wrapper">
+    <form @submit.prevent="send" class="wrapper">
             <div class="title">
               {{$t("contactus.form2.text7")}}
             </div>
             <div class="form">
                <div class="inputfield">
                   <label>{{$t("contactus.form2.text1")}}</label>
-                  <input v-model="name" type="text" class="input">
+                  <input v-model="$v.nameVagas.$model" type="text" class="input">
+                  <p v-if="$v.nameVagas.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div> 
                <div class="inputfield">
                 <label>{{$t("contactus.form2.text2")}}</label>
-                <input type="text" class="input">
+                <input type="text" class="input" v-model="$v.emailVagas.$model">
+                <p v-if="$v.emailVagas.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
              </div> 
                 <div class="inputfield">
                   <label>{{$t("contactus.form2.text3")}}</label>
@@ -18,18 +24,53 @@
                   <div id="payCC" class="floatBlock">
                     <label for="paymentCC"> <input id="paymentCC" name="paymentType" type="radio" value="TI" />  {{$t("contactus.form2.text4")}}</label>
                 </div>
-
                 <div id="payInvoice" class="floatBlock">
                     <label for="paymentInv"> <input id="paymentInv" name="paymentType" type="radio" value="Estagio" /> {{$t("contactus.form2.text5")}}</label>
                 </div>
                </div>
             </div>
             <div class="inputfield">
-                <button class="btn">{{$t("contactus.form2.text6")}}</button> 
+                <button class="btn" :disabled="$v.$error">{{$t("contactus.form2.text6")}}</button> 
               </div>
           </div>
-          </div>
+          </form>
 </template>
+
+<script>
+import { validationMixin } from "vuelidate";
+import { required, email, minLength } from "vuelidate/lib/validators";
+
+export default {
+  mixins: [validationMixin],
+  data() {
+    return{
+      nameVagas:'',
+      vaga:'',
+      emailVagas:'',
+    }
+  },
+  validations: {
+    nameVagas: { required, minLength: minLength(1) },
+    emailVagas: { required, email },
+    vaga: { required },
+  },
+
+   methods: {
+    send() {
+      this.resultado = "";
+      this.$v.$touch();
+      if (this.$v.$invalid) return;
+      this.nameVagas = "";
+      this.emailVagas = "";
+      this.vaga = "";
+      this.resultado = "Enviado!";
+      this.$v.$reset();
+    },
+  },
+  
+}
+</script>
+
 
 <style scoped>
 /* form */

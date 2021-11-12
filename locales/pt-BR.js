@@ -169,7 +169,7 @@ dogspage:{
 
 
 contactus:{
-
+    error:"*Campo obrigatório*",
     bannerhome: {
         textheader: "Clínica PetHealth",
         textheader2: "Onde seus melhores amigos se tornam nossos também!",
@@ -200,9 +200,6 @@ contactus:{
         text5:"Estágio Medicina Veterinária",
         text6:"Enviar",
         text7:"Quer fazer parte do nosso time? Nos mande um E-mail!",
-        
-
-    
     },
 },
 

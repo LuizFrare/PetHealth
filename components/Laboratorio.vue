@@ -1,7 +1,7 @@
 <template> 
     <div>
         <div class="imagem1">
-            <img :src="require(`~/static/img/lab1.jpg`)" alt="Laboratório">
+            <nuxt-img src="img/lab1.jpg" alt="Laboratório"/>
         </div>
         <div class="backdivBlueCima">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#0097ff" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,224C384,203,480,149,576,138.7C672,128,768,160,864,181.3C960,203,1056,213,1152,208C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -13,9 +13,7 @@
         </div>
         <div class="imagem1">
 
-            <img :src="require(`~/static/img/lab2.jpg`)" alt="Laboratório" style="margin-top: -1rem;">
-
-            <nuxt-img src="~/static/img/lab2.jpg" alt="Laboratório" style="margin-top: -1rem;"/>
+            <nuxt-img src="img/lab2.jpg" alt="Laboratório" style="margin-top: -1rem;"/>
 
         </div>
     </div>

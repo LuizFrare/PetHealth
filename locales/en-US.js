@@ -168,7 +168,7 @@ networks: {
 },
 
 contactus:{
-
+    error:"*Required field*",
     bannerhome: {
         textheader: "PetHealth Clinic",
         textheader2: "Where your best friends become ours too!"

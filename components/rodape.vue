@@ -43,11 +43,13 @@
 		<p class="TextoInformacoes">{{ $t("footer.subfooter.text1") }}</p>
     <a
     href="#"
-  v-for="locale in availableLocales"
-  :key="locale.code"
-  @click.prevent="switchLocalePatch(locale.code)"
+    v-for="locale in availableLocales"
+    :key="locale.code"
+    @click.prevent="switchLocalePatch(locale.code)"
   >
-  {{locale.name}}
+  <img class="bandeira"
+          :src="require(`~/static/img/${locale.code}.svg`)"
+        />
   </a>
 	</div>
     </section>
@@ -218,5 +220,9 @@ padding: 7px 50px;
   #footer nav #menu-menu-rodape > li > ul > li + li {
       padding-top: 13px
   }
+}
+
+.bandeira{
+  height: 35px;
 }
 </style>

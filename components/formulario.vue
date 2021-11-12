@@ -3,20 +3,27 @@
             <div class="title">
               {{$t("contactus.form1.text1")}}
             </div>
-            <form class="form">
+            <form class="form" @submit.prevent="send">
+              
                <div class="inputfield">
                   <label>{{$t("contactus.form1.text2")}}</label>
-                  <input  type="text" class="input" v-model="contact.pet">
+                  <input  type="text" class="input" v-model="pet" :class="{ error: $v.name.$error }">
+                   <p v-if="$v.name.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div>  
                 <div class="inputfield">
                   <label>{{$t("contactus.form1.text3")}}</label>
-                  <input type="text" class="input" v-model="contact.name">
+                  <input type="text" class="input" v-model="$v.name.$model" :class="{ error: $v.name.$error }">
+                  <p v-if="$v.name.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div>  
             
                 <div class="inputfield">
                   <label>{{$t("contactus.form1.text4")}}</label>
                   <div class="custom_select">
-                    <select v-model="contact.gender">
+                    <select v-model="gender">
                       <option value="">{{$t("contactus.form1.text10")}}</option>
                       <option value="Macho">{{$t("contactus.form1.text11")}}</option>
                       <option value="Femea">{{$t("contactus.form1.text12")}}</option>
@@ -25,33 +32,96 @@
                </div> 
                 <div class="inputfield">
                   <label>{{$t("contactus.form1.text5")}}</label>
-                  <input type="text" class="input" v-model="contact.email">
+                  <input type="text" class="input" v-model="email" :class="{ error: $v.name.$error }">
+                  <p v-if="$v.name.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div> 
               <div class="inputfield">
                   <label>{{$t("contactus.form1.text6")}}</label>
-                  <input type="text" class="input" v-model="contact.number">
+                  <input type="text" class="input" v-model="number" :class="{ error: $v.name.$error }">
+                  <p v-if="$v.name.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div> 
               <div class="inputfield">
                   <label>{{$t("contactus.form1.text7")}}</label>
-                  <textarea class="textarea" v-model="contact.text"></textarea>
+                  <textarea class="textarea" v-model="text" :class="{ error: $v.name.$error }"></textarea>
+                  <p v-if="$v.name.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div>  
               <div class="inputfield terms">
                   <label class="check">
-                    <input type="checkbox" v-model="contact.check">
+                    <input type="checkbox" v-model="check" :class="{ error: $v.name.$error }">
                     <span class="checkmark"></span>
                   </label>
                   <p>{{$t("contactus.form1.text8")}}</p>
+                   <p v-if="$v.name.$error" style="color: red; margin-left:1rem">
+                  {{$t("contactus.error")}}
+                  </p>
                </div> 
               <div class="inputfield">
-                <button class="btn" v-on:click.prevent="saveContact (contact) ">{{$t("contactus.form1.text9")}}</button>
+                <button class="btn" :disabled="$v.$error">{{$t("contactus.form1.text9")}}</button>
               </div>
+                  <p style=" color: #1fb866;"> {{ resultado }}</p>
             </form>
     </form>
 </template>
 
 <script>
 
+import { validationMixin } from "vuelidate";
+import { required, email, minLength, numeric } from "vuelidate/lib/validators";
+
 export default {
+  
+  mixins: [validationMixin],
+
+  data() {
+    return{
+      name:'',
+      pet:'',
+      email:'',
+      text:'',
+      gender:'',
+      check:'',
+      number:'',
+    }
+    
+  },
+
+  validations: {
+    pet: { required, minLength: minLength(1) },
+    name: { required, minLength: minLength(1) },
+    email: { required, email },
+    text: { required, minLength: minLength(50) },
+    check: { required },
+    number:{ required, numeric },
+  },
+
+  methods: {
+    send() {
+      this.resultado = "";
+      this.$v.$touch();
+      if (this.$v.$invalid) return;
+      this.name = "";
+      this.pet = "";
+      this.email = "";
+      this.text = "";
+      this.gender = "";
+      this.number = "";
+      this.check = "";
+     this.resultado = "Enviado!";
+      this.$v.$reset();
+    },
+  },
+
+
+}
+/*
+export default {
+
 
 
     data () {
@@ -90,6 +160,7 @@ export default {
         }
       }
     }
+    */
 </script>
 
 

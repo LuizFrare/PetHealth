@@ -59,7 +59,7 @@ export default {
       }
     ],
     langDir: 'locales',
-    defaultLocale: 'en'
+    defaultLocale: 'pt'
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
