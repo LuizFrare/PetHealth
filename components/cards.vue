@@ -375,5 +375,26 @@ font-size: 1.2em;
   .buttonInformation{
     margin-top:1.5em;
   }
+
+  .buttonInformation{
+    margin-top: 1em;
+    width: 8em;
+    height: 1.9em;
+    font-size: 1.5rem;
+  }
+
+  .buttonInformation2{
+    margin-top: 1em;
+    width: 8em;
+    height: 1.9em;
+    font-size: 1.5rem;
+  }
+
+  .buttonInformation3{
+    margin-top: 1em;
+    width: 8em;
+    height: 1.9em;
+    font-size: 1.5rem;
+  }
 }
 </style>
