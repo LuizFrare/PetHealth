@@ -7,10 +7,10 @@
         <section class="element">
             <div class="textoInicial">
                 <p class="texto">
-                    <span class="azulMaroto">{{ $t("textblue") }}</span> {{ $t("texthome1") }}
+                    <span class="azulMaroto">{{ $t("index.textblue") }}</span> {{ $t("index.texthome1") }}
                 </p>
                 <p class="texto">
-                    {{ $t("texthome2") }}
+                    {{ $t("index.texthome2") }}
                 </p>
             </div>
         </section>
@@ -18,7 +18,7 @@
         <cards />
         <div class="background">
             <p data-aos="fade-left" class="texto branco marginTexto">
-                {{ $t("texthome3") }}
+                {{ $t("index.texthome3") }}
             </p>
         </div>
         <redes />

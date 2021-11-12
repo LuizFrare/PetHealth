@@ -1,16 +1,16 @@
 <template>
     <section class="titulo">
-        <h2 style="margin-bottom:3em; font-weight: bold;">{{ $t("textblue2") }}</h2>
+        <h2 style="margin-bottom:3em; font-weight: bold;">{{ $t("index.textblue2") }}</h2>
         <div  data-aos="fade-up" class="category">
             <div class="category-1 animate" data-anime="up">
                 <div class="imgInformation background-green">
                     <nuxt-img class="imagemInfDog" :src="Cachorro"/>
                 </div>
                 <div class="containerInformation">
-                    <h5 class="greenText" style="padding-top: 4%;">{{ $t("carddog.text1") }}</h5>
+                    <h5 class="greenText" style="padding-top: 4%;">{{ $t("index.carddog.text1") }}</h5>
                     <div class="information">
                         <div class="line"></div>
-                        <p class="textoCard">{{ $t("carddog.text2") }}</p>
+                        <p class="textoCard">{{ $t("index.carddog.text2") }}</p>
                         <button class="buttonInformation borderGreen greenText"><NuxtLink class="greenText" to="/caes">{{ $t("knowmore") }}</NuxtLink></button>
                         <div class="totalLine"></div>
                     </div>
@@ -21,10 +21,10 @@
                     <nuxt-img class="imagemInf" :src="Gato"/>
                 </div>
                 <div class="containerInformation">
-                    <h5 class="purpleText" style="padding-top: 4%;">{{ $t("cardcat.text1") }}</h5>
+                    <h5 class="purpleText" style="padding-top: 4%;">{{ $t("index.cardcat.text1") }}</h5>
                     <div class="information">
                         <div class="line"></div>
-                        <p class="textoCard">{{ $t("cardcat.text2") }}</p>
+                        <p class="textoCard">{{ $t("index.cardcat.text2") }}</p>
                         <button class="buttonInformation2 borderPurple purpleText"><NuxtLink class="purpleText" to="/gatos">{{ $t("knowmore") }}</NuxtLink></button>
                         <div class="totalLine"></div>
                     </div>
@@ -35,10 +35,10 @@
                     <nuxt-img class="imagemInf marginPc" :src="Passaro"/>
                 </div>
                 <div class="containerInformation">
-                    <h5 class="pinkText" style="padding-top: 4%;">{{ $t("cardbird.text1") }}</h5>
+                    <h5 class="pinkText" style="padding-top: 4%;">{{ $t("index.cardbird.text1") }}</h5>
                     <div class="information">
                         <div class="line"></div>
-                        <p class="textoCard">{{ $t("cardbird.text2") }}</p>
+                        <p class="textoCard">{{ $t("index.cardbird.text2") }}</p>
                         <button class="buttonInformation3 borderPink pinkText"><NuxtLink class="pinkText" to="/aves">{{ $t("knowmore") }}</NuxtLink></button>
                     </div>
                 </div>

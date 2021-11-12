@@ -2,8 +2,8 @@
     <section class="img">
 			<div class="fundo">
 				<div class="containerLetters">
-					<h1>{{ $t("textheader") }}</h1>
-					<h3>{{ $t("textheader2") }}</h3>
+					<h1>{{ $t("index.bannerhome.textheader") }}</h1>
+					<h3>{{ $t("index.bannerhome.textheader2") }}</h3>
 				</div> 
 				<div class="svg">
 					<svg width="50" height="100" viewBox="0 0 70 38" fill="none">

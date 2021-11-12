@@ -1,13 +1,13 @@
 <template>
     <div class="row">
         <div class="col-sm-6 texto-vantagens" >
-     <br><h2 data-aos="fade-left" class="">Quais as principais características<br>dos Persas?</h2><br>
-        <h5 data-aos="fade-right" class=" Meio">Peso</h5>
-            <p data-aos="fade-left" class="">Um exemplar adulto pode chegar entre 3 e 7 quilogramas.</p><br>
-        <h5 data-aos="fade-right" class=" Meio">Expectativa de vida:</h5>
-            <p data-aos="fade-left" class="">Geralmente esses felinos vivem de 10 a 15 anos.</p><br>
-        <h5 data-aos="fade-right" class=" Meio">Fácil de cuidar?</h5>
-            <p data-aos="fade-left" class="">Essa raça é bem carinhosa e meiga, sendo uma ótima opção para qualquer lar.</p><br>
+     <br><h2 data-aos="fade-left" class="">{{ $t("catspage.bannerpersian.text1") }}<br>{{ $t("catspage.bannerpersian.text2") }}</h2><br>
+        <h5 data-aos="fade-right" class=" Meio">{{ $t("catspage.bannerpersian.text3") }}</h5>
+            <p data-aos="fade-left" class="">{{ $t("catspage.bannerpersian.text4") }}</p><br>
+        <h5 data-aos="fade-right" class=" Meio">{{ $t("catspage.bannerpersian.text5") }}</h5>
+            <p data-aos="fade-left" class="">{{ $t("catspage.bannerpersian.text6") }}</p><br>
+        <h5 data-aos="fade-right" class=" Meio">{{ $t("catspage.bannerpersian.text7") }}</h5>
+            <p data-aos="fade-left" class="">{{ $t("catspage.bannerpersian.text8") }}</p><br>
     </div>
      <div class="col-sm-6 banner-vantagens" >
      </div>

@@ -18,18 +18,18 @@
 		</li>
 	      </ul>
     <div class="textoInicial1">
-            <p class="texto"><span class="amareloMaroto">Conheça, </span>as raças as quais trabalhamos de dedicamos todo nosso amor.</p> <p class="texto"> É impossível não cair de amor por essas fofurinhas!</p>
+            <p class="texto"><span class="amareloMaroto">{{ $t("dogspage.yellowtext") }} </span>{{ $t("dogspage.text1") }}</p> <p class="texto"> {{ $t("dogspage.text2") }}</p>
           </div>
           <div class="textoInicial1">
-            <p class="texto"><span class="amareloMaroto">Husky Siberiano, </span>o cachorro da neve!</p>
+            <p class="texto"><span class="amareloMaroto">{{ $t("dogspage.yellowtext2") }} </span>{{ $t("dogspage.text3") }}</p>
           </div>
       <husky/>
       <div class="textoInicial">
-            <p class="texto"><span class="amareloMaroto">Buldogue francês, </span>o tranquilo companheiro!</p>
+            <p class="texto"><span class="amareloMaroto">{{ $t("dogspage.yellowtext3") }}  </span>{{ $t("dogspage.text4") }}</p>
           </div>
       <bfrances/>
       <div class="textoInicial">
-            <p class="texto"><span class="amareloMaroto">Splitz-alemão, </span>o pequeno abundante!</p>
+            <p class="texto"><span class="amareloMaroto">{{ $t("dogspage.yellowtext4") }} </span>{{ $t("dogspage.text5") }}</p>
           </div>
           <splitz/>
       <redes/>

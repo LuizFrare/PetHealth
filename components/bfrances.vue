@@ -2,13 +2,13 @@
     <div class="row">
         <div class="col-sm-6 banner-vantagens" ></div>
         <div class="col-sm-6 texto-vantagens" >
-     <br><h2 data-aos="fade-left">Quais as principais características<br>dos Bulldogues Franceses?</h2><br>
-        <h5 data-aos="fade-right" class="Meio">Peso</h5>
-            <p data-aos="fade-left">Um exemplar adulto pode chegar a 14 quilogramas.</p><br>
-        <h5 data-aos="fade-right" class="Meio">Expectativa de vida:</h5>
-            <p data-aos="fade-left">Geralmente esses brincalhões vivem 12 anos.</p><br>
-        <h5 data-aos="fade-right" class="Meio">Fácil de cuidar?</h5>
-            <p data-aos="fade-left">Essa raça é bem pequena e meiga, sendo uma ótima opção para qualquer lar.</p><br>
+     <br><h2 data-aos="fade-left">{{ $t("dogspage.bannerbuldogue.text1") }}<br>{{ $t("dogspage.bannerbuldogue.text2") }}</h2><br>
+        <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannerbuldogue.text3") }}</h5>
+            <p data-aos="fade-left">{{ $t("dogspage.bannerbuldogue.text4") }}</p><br>
+        <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannerbuldogue.text5") }}</h5>
+            <p data-aos="fade-left">{{ $t("dogspage.bannerbuldogue.text6") }}</p><br>
+        <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannerbuldogue.text7") }}</h5>
+            <p data-aos="fade-left">{{ $t("dogspage.bannerbuldogue.text8") }}</p><br>
     </div>
  </div>
 </template>

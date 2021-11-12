@@ -19,7 +19,7 @@
 	      </ul>
       <formulario/>
         <div class="backgroundFaq">
-          <p data-aos="fade-left" class="texto branco marginTexto">Com anos de mercado, tradição e confiança, tomamos todos os cuidados para manter sua felicidade e a do seu pet!</p>
+          <p data-aos="fade-left" class="texto branco marginTexto">{{$t("contactus.text1")}}</p>
         </div>
       <radio/>
       <redes/>

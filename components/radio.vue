@@ -1,31 +1,31 @@
 <template>
     <div class="wrapper">
             <div class="title">
-              Quer fazer parte do nosso time? Nos mande um E-mail!
+              {{$t("contactus.form2.text7")}}
             </div>
             <div class="form">
                <div class="inputfield">
-                  <label>Nome Completo</label>
+                  <label>{{$t("contactus.form2.text1")}}</label>
                   <input v-model="name" type="text" class="input">
                </div> 
                <div class="inputfield">
-                <label>E-mail</label>
+                <label>{{$t("contactus.form2.text2")}}</label>
                 <input type="text" class="input">
              </div> 
                 <div class="inputfield">
-                  <label>Selecione sua vaga</label>
+                  <label>{{$t("contactus.form2.text3")}}</label>
                   <div id="paymentContainer" class="Options">
                   <div id="payCC" class="floatBlock">
-                    <label for="paymentCC"> <input id="paymentCC" name="paymentType" type="radio" value="TI" />  Auxiliar T.I</label>
+                    <label for="paymentCC"> <input id="paymentCC" name="paymentType" type="radio" value="TI" />  {{$t("contactus.form2.text4")}}</label>
                 </div>
 
                 <div id="payInvoice" class="floatBlock">
-                    <label for="paymentInv"> <input id="paymentInv" name="paymentType" type="radio" value="Estagio" />  Estágio Medicina Veterinária</label>
+                    <label for="paymentInv"> <input id="paymentInv" name="paymentType" type="radio" value="Estagio" /> {{$t("contactus.form2.text5")}}</label>
                 </div>
                </div>
             </div>
             <div class="inputfield">
-                <input type="submit" value="Enviar" class="btn">
+                <button class="btn">{{$t("contactus.form2.text6")}}</button> 
               </div>
           </div>
           </div>

@@ -18,18 +18,18 @@
 		</li>
 	      </ul>
     <div class="textoInicial1">
-            <p class="texto"><span class="roxoMaroto">Conheça, </span>as raças as quais trabalhamos de dedicamos todo nosso amor.</p> <p class="texto"> É impossível não cair de amor por essas fofurinhas!</p>
+            <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext") }} </span>{{ $t("catspage.text1") }}</p> <p class="texto"> {{ $t("catspage.text2") }}</p>
     </div>
           <div class="textoInicial1">
-            <p class="texto"><span class="roxoMaroto">Persa, </span>o encantador peludinho!</p>
+            <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext2") }} </span>{{ $t("catspage.text3") }}</p>
           </div>
       <persa/>
       <div class="textoInicial">
-            <p class="texto"><span class="roxoMaroto">Maine-coon, </span>o gigante carinhoso!</p>
+            <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext3") }} </span>{{ $t("catspage.text4") }}</p>
           </div>
       <maine/>
       <div class="textoInicial">
-            <p class="texto"><span class="roxoMaroto">Ragdoll, </span>os amáveis de colo!</p>
+            <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext4") }} </span>{{ $t("catspage.text5") }}</p>
           </div>
           <ragdoll/>
           <redes/>

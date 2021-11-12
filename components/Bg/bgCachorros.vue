@@ -2,8 +2,8 @@
     <section class="img">
 			<div class="fundo">
 				<div class="containerLetters">
-					<h1>Clínica PetHealth</h1>
-					<h3>Onde seus melhores amigos se tornam nossos também!</h3>
+					<h1>{{ $t("dogspage.bannerdogs.textheader") }}</h1>
+					<h3>{{ $t("dogspage.bannerdogs.textheader2") }}</h3>
 				</div> 
 				<div class="svg">
 					<svg width="50" height="100" viewBox="0 0 70 38" fill="none">

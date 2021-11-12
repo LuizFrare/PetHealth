@@ -18,9 +18,9 @@
 		</li>
 	      </ul>
           <div class="textoInicial">
-            <p class="texto"><span class="vermelhoMaroto">Cuidamos de aves, </span>de todos os tipos!</p>
-            <p class="texto">Não podemos negar o fato de que cada vez mais pessoas escolhem amigos de penas para serem seus Pets de estimação,</p>
-            <p class="texto">sobretudo, essa relação afetiva é muito intensa e verdadeira.</p>
+            <p class="texto"><span class="vermelhoMaroto">{{ $t("birdpage.pinktext") }} </span>{{ $t("birdpage.text1") }}</p>
+            <p class="texto">{{ $t("birdpage.text2") }}</p>
+            <p class="texto">{{ $t("birdpage.text3") }}</p>
           </div>
       <aves/>
       <redes/>

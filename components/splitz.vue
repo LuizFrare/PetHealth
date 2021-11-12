@@ -1,13 +1,13 @@
 <template>
     <div class="row">
         <div class="col-sm-6 texto-vantagens" >
-     <br><h2 data-aos="fade-left">Quais as principais características<br>dos Splitzes Alemães?</h2><br>
-        <h5 data-aos="fade-right" class="Meio">Peso</h5>
-            <p data-aos="fade-left">Um exemplar adulto pode chegar a cerca de 4 quilogramas.</p><br>
-        <h5 data-aos="fade-right" class="Meio">Expectativa de vida:</h5>
-            <p data-aos="fade-left">Geralmente esses doguinhos vivem 16 anos.</p><br>
-        <h5 data-aos="fade-right" class="Meio">Fácil de cuidar?</h5>
-            <p data-aos="fade-left">Essa raça possui um porte de tamanho bem pequeno, ideal para apartamentos e casas pequenas.</p><br>
+     <br><h2 data-aos="fade-left">{{ $t("dogspage.bannersplitz.text1") }}<br>{{ $t("dogspage.bannersplitz.text2") }}</h2><br>
+        <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannersplitz.text3") }}</h5>
+            <p data-aos="fade-left">{{ $t("dogspage.bannersplitz.text4") }}</p><br>
+        <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannersplitz.text5") }}</h5>
+            <p data-aos="fade-left">{{ $t("dogspage.bannersplitz.text6") }}</p><br>
+        <h5 data-aos="fade-right" class="Meio">{{ $t("dogspage.bannersplitz.text7") }}</h5>
+            <p data-aos="fade-left">{{ $t("dogspage.bannersplitz.text8") }}</p><br>
     </div>
     <div class="col-sm-6 banner-vantagens" ></div>
  </div>

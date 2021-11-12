@@ -3,15 +3,15 @@
      <div class="col-sm-6 banner-vantagens" >
      </div>
       <div class="col-sm-6 texto-vantagens" >
-     <br><h2 data-aos="fade-left" class="Meio">{{ $t("banner1.text1") }}<br>{{ $t("banner1.text2") }}<br>{{ $t("banner1.text3") }}</h2><br>
-        <h5 data-aos="fade-left" class="Meio">{{ $t("banner1.text4") }}</h5>
-            <p data-aos="fade-right">{{ $t("banner1.text5") }}</p><br>
-        <h5 data-aos="fade-left" class="Meio">{{ $t("banner1.text6") }}</h5>
-            <p data-aos="fade-right">{{ $t("banner1.text7") }}</p><br>
-        <h5 data-aos="fade-left" class=" Meio">{{ $t("banner1.text8") }}</h5>
-            <p data-aos="fade-right" >{{ $t("banner1.text9") }}</p><br>
-        <h5 data-aos="fade-left" class=" Meio">{{ $t("banner1.text10") }}</h5>
-            <p data-aos="fade-right" >{{ $t("banner1.text11") }}</p><br>
+     <br><h2 data-aos="fade-left" class="Meio">{{ $t("index.bannerhome1.text1") }}<br>{{ $t("index.bannerhome1.text2") }}<br>{{ $t("index.bannerhome1.text3") }}</h2><br>
+        <h5 data-aos="fade-left" class="Meio">{{ $t("index.bannerhome1.text4") }}</h5>
+            <p data-aos="fade-right">{{ $t("index.bannerhome1.text5") }}</p><br>
+        <h5 data-aos="fade-left" class="Meio">{{ $t("index.bannerhome1.text6") }}</h5>
+            <p data-aos="fade-right">{{ $t("index.bannerhome1.text7") }}</p><br>
+        <h5 data-aos="fade-left" class=" Meio">{{ $t("index.bannerhome1.text8") }}</h5>
+            <p data-aos="fade-right" >{{ $t("index.bannerhome1.text9") }}</p><br>
+        <h5 data-aos="fade-left" class=" Meio">{{ $t("index.bannerhome1.text10") }}</h5>
+            <p data-aos="fade-right" >{{ $t("index.bannerhome1.text11") }}</p><br>
     </div>
  </div>
 </template>
