@@ -1,4 +1,4 @@
-<img src="./assets/img/Logo.svg" alt="Logo Clínica PetHealth" width="80">
+<img src="./static/img/Logo.svg" alt="Logo Clínica PetHealth" width="80">
 
 # Clínica PetHealth
 
