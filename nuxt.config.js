@@ -29,7 +29,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/Vuelidate'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -77,7 +76,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ["aos", 'vuelidate']
+    vendor: ["aos"]
   },
   plugins:[{src:"~~/plugins/aos", ssr:false}],
   css:["aos/dist/aos.css"]
