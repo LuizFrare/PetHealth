@@ -10,16 +10,16 @@
         <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
           <b-navbar-nav>
             <nuxt-link  to="/" tag="a" class="p-2 link">
-              Início
+              {{ $t("menu.home") }}
             </nuxt-link>
             <nuxt-link  to="/Gatos" tag="a" class="p-2 link">
-              Gatos
+              {{ $t("menu.cat") }}
             </nuxt-link>
             <nuxt-link  to="/Caes" tag="a" class="p-2 link">
-              Cães
+              {{ $t("menu.dog") }}
             </nuxt-link>
             <nuxt-link  to="/Contato" tag="a" class="p-2 link">
-              Contato
+              {{ $t("menu.contact") }}
             </nuxt-link>
           </b-navbar-nav>
         </b-collapse>
