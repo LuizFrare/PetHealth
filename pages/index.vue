@@ -4,7 +4,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <BgHome/>
-        <section class="element">
+        <div class="element">
             <div class="textoInicial">
                 <p class="texto">
                     <span class="azulMaroto">{{ $t("index.textblue") }}</span> {{ $t("index.texthome1") }}
@@ -13,11 +13,11 @@
                     {{ $t("index.texthome2") }}
                 </p>
             </div>
-        </section>
+        </div>
         <banner />
         <cards />
         <div class="background">
-            <p data-aos="fade-left" class="texto branco marginTexto">
+            <p data-aos="fade-left" class="texto branco marginTexto" style="margin:2rem">
                 {{ $t("index.texthome3") }}
             </p>
         </div>
@@ -102,13 +102,11 @@ width: auto;
 }
 
 .textoInicial{
-margin-top: 6em;
-margin-bottom: 3em;
+margin-top: 3em;
 }
 
 .textoInicial1{
-  margin-top: 6em;
-  margin-bottom: 3em;
+  margin-top: 3em;
   }
 
 .element2{
@@ -226,6 +224,7 @@ html{
 
 /* Migalha de pão */
 .breadcrumbs{
+  margin-top: 1.5rem;
 	padding: 10px;
 	padding-left: 50px;
 	line-height: 1.7;
@@ -272,6 +271,20 @@ html{
     display:flex;
     align-items:center;
     justify-content:center;
+}
+}
+
+@media (max-width: 575px)
+{
+.breadcrumbs{
+	font-size: 1.3rem;
+}
+
+.breadcrumbs__item{
+	font-size: 1.3rem;
+}
+.breadcrumbs__link--active{
+	font-size: 1.3rem;
 }
 }
 </style>

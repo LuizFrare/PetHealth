@@ -53,5 +53,17 @@
 	font-weight: bolder;
 }
 
+@media (max-width: 575px)
+{
+.breadcrumbs{
+	font-size: 1.3rem;
+}
 
+.breadcrumbs__item{
+	font-size: 1.3rem;
+}
+.breadcrumbs__link--active{
+	font-size: 1.3rem;
+}
+}
 </style>

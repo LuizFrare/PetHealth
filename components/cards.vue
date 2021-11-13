@@ -312,6 +312,8 @@ html{
   }
   .category{
     display: block;
+    margin-left:2rem;
+    font-size:0.9rem;
   }
   .line{
     display: none;
@@ -336,6 +338,7 @@ html{
     min-width: 100px;
     min-height: 100px;
     margin-bottom: 5em;
+    margin-left:2em
   }
 
 .greenText{
@@ -383,6 +386,13 @@ font-size: 1.2em;
     font-size: 1.5rem;
   }
 
+  .buttonInformation:hover{
+    margin-top: 1em;
+    width: 8em;
+    height: 1.9em;
+    font-size: 1.5rem;
+  }
+
   .buttonInformation2{
     margin-top: 1em;
     width: 8em;
@@ -390,7 +400,21 @@ font-size: 1.2em;
     font-size: 1.5rem;
   }
 
+  .buttonInformation2:hover{
+    margin-top: 1em;
+    width: 8em;
+    height: 1.9em;
+    font-size: 1.5rem;
+  }
+
   .buttonInformation3{
+    margin-top: 1em;
+    width: 8em;
+    height: 1.9em;
+    font-size: 1.5rem;
+  }
+
+  .buttonInformation3:hover{
     margin-top: 1em;
     width: 8em;
     height: 1.9em;

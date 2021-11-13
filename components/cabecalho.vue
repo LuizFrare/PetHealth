@@ -4,17 +4,27 @@
 		<div class="logo">
             <NuxtLink to="/" class="logoImg"><nuxt-img style="height: 100%; width: 100%; max-width: 71px; max-height: 71px; margin-top:5px;" alt="imagem da logo" src="img/LogoWhite.png"/></NuxtLink>
         </div>
-            <nav>
-            <button style="display:none">
-              <span id="hamburger"></span>
-            </button>
-            <ul id="menu-nav" role="menu-nav">
-				      <li><NuxtLink to="/" tag="a">{{ $t("menu.home") }}</NuxtLink></li>
-              <li><NuxtLink to="/gatos" tag="a">{{ $t("menu.cat") }}</NuxtLink></li>
-              <li><NuxtLink to="/caes" tag="a">{{ $t("menu.dog") }}</NuxtLink></li>
-              <li><NuxtLink to="/contato" tag="a">{{ $t("menu.contact") }}</NuxtLink></li>
-            </ul>
-          </nav>
+      <b-navbar toggleable="lg" type="light">
+      <b-container class="py-2">
+        <b-navbar-toggle style="margin-top:1.1rem; background-color:white" target="nav-collapse"></b-navbar-toggle>
+        <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <nuxt-link  to="/" tag="a" class="p-2 link">
+              Início
+            </nuxt-link>
+            <nuxt-link  to="/Gatos" tag="a" class="p-2 link">
+              Gatos
+            </nuxt-link>
+            <nuxt-link  to="/Caes" tag="a" class="p-2 link">
+              Cães
+            </nuxt-link>
+            <nuxt-link  to="/Contato" tag="a" class="p-2 link">
+              Contato
+            </nuxt-link>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-container>
+    </b-navbar>
         <button class="buttonHeader"> <NuxtLink to="/coletas" tag="a">{{ $t("menu.exams") }}</NuxtLink></button>
 		</header>
 		
@@ -43,6 +53,12 @@ header a{
     color: white;
 }
 
+.link {
+  color: white;
+  font-size: 1.1rem;
+  margin-inline: 0.9rem;
+}
+
 header{
   display: flex;
   width: 100vw;
@@ -69,12 +85,6 @@ transition: all .5s ease;
   list-style: none;
   gap: 2rem;
 }
-#menu-nav a {
-  display: block;
-  padding: 1.5rem;
-  text-decoration: none;
-  font-weight:bolder;
-}
 
 #btn-mobile {
   display: none;
@@ -87,6 +97,7 @@ transition: all .5s ease;
   height: 100%;
   margin-left: 15em;
 }
+
 .logoImg{
   align-self: center;
 }
@@ -158,8 +169,6 @@ width: auto;
 .buttonHeader{
     margin-right: 50px;
 }
-
-
 
 .containerLetters{
   display: block;

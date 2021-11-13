@@ -4,7 +4,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-2">
-					
 				</div>
 				<div class="col-sm-8">
 					 <nav>
@@ -113,7 +112,7 @@ methods: {
   width: 25%;
   display: block;
   float: left;
-  padding-left: 30px;
+  padding-left: 17px;
   padding-right: 15px
 }
 }
