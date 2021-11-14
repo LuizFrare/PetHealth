@@ -160,7 +160,6 @@ width: auto;
   z-index: 1000;
   height: 0px;
   visibility: hidden;
-  overflow-y: hidden;
 }
 
 .buttonHeader{

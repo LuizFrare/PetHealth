@@ -30,6 +30,8 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  overflow-x: hidden;
+  overflow-y:auto;
 }
 
 *, *:before, *:after {
@@ -157,23 +159,26 @@ margin-right: 1.5em;
 }
 
 /*scroll-bar*/
-::-webkit-scrollbar{
-width: 15px;
-}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+  }
 
-::-webkit-scrollbar-track{
-border: 7px solid #ffffff;
-}
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
 
-::-webkit-scrollbar-thumb{
-background:linear-gradient(
- 45deg,
-rgb(14, 14, 14),
-#1b1b1b
-);
-border-radius: 3px;
-}
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
 
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+  }
 /*Responsivo Cards */
 @media (max-width: 880px)
 {
@@ -214,6 +219,7 @@ border-radius: 3px;
 {
 html{
     font-size: 80%;
+    overflow-x: hidden;
 }
 .item{
     font-size: 1.1em;
