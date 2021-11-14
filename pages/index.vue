@@ -30,7 +30,6 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  overflow-x: hidden;
 }
 
 *, *:before, *:after {
