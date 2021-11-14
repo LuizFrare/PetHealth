@@ -54,7 +54,7 @@ knowmore: "Saiba Mais",
 
 networks: {
     textblue: "Gostou do nosso conteúdo?",
-    text2: "Acomapanhe a PetHealth em nossas redes sociais!",
+    text2: "Acompanhe a PetHealth em nossas redes sociais!",
     text3: "Veja o dia-a-dia de uma clínica veterinária, além de extras e sorteios."
 },
 
