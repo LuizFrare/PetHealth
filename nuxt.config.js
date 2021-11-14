@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'PetHealth',
     htmlAttrs: {
-      lang: 'Pt-br'
+      lang: 'pt-br'
       
     },
     

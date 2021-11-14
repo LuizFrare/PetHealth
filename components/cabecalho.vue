@@ -10,12 +10,13 @@
         <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
           <b-navbar-nav>
             <nuxt-link
-              v-for="links of items"
-              :key="links.url"
-              :to="links.url"
+              v-for="item of items"
+              :key="item.url"
+              :to="item.url"
               class="p-2 link"
+              exact-active-class="underline"
             >
-              {{ links.text }}
+              {{ item.text }}
       </nuxt-link>
           </b-navbar-nav>
         </b-collapse>

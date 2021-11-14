@@ -32,7 +32,7 @@ index: {
     textblue2: "Cuidamos de todos!",
     carddog: {
         text1: "Cachorros",
-        text2: "Nosssa clínica é a única do Brasil com Certificação Internacional de Dog Walker, Dog Sitter e Primeiros Socorros para cães. Com profissionais qualificados e equipamentos de última geração, garantimos amor e acolhimento ao seu companheiro."
+        text2: "Nossa clínica é a única do Brasil com Certificação Internacional de Dog Walker, Dog Sitter e Primeiros Socorros para cães. Com profissionais qualificados e equipamentos de última geração, garantimos amor e acolhimento ao seu companheiro."
         
     },
     cardcat: {
