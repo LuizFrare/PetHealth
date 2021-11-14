@@ -326,6 +326,7 @@ html{
     display: flex;
     flex-direction: row-reverse;
     font-size: 1.5em;
+    margin-right: 1.5em;
   }
   .containerInformation{
     text-align: center;
@@ -338,7 +339,7 @@ html{
     min-width: 100px;
     min-height: 100px;
     margin-bottom: 5em;
-    margin-left:2em
+    margin-left: 2em;
   }
 
 .greenText{

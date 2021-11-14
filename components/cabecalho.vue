@@ -9,18 +9,15 @@
         <b-navbar-toggle style="margin-top:1.1rem; background-color:white" target="nav-collapse"></b-navbar-toggle>
         <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <nuxt-link  to="/" tag="a" class="p-2 link">
-              {{ $t("menu.home") }}
-            </nuxt-link>
-            <nuxt-link  to="/Gatos" tag="a" class="p-2 link">
-              {{ $t("menu.cat") }}
-            </nuxt-link>
-            <nuxt-link  to="/Caes" tag="a" class="p-2 link">
-              {{ $t("menu.dog") }}
-            </nuxt-link>
-            <nuxt-link  to="/Contato" tag="a" class="p-2 link">
-              {{ $t("menu.contact") }}
-            </nuxt-link>
+            <nuxt-link
+              v-for="item of items"
+              :key="item.url"
+              :to="item.url"
+              class="p-2 link"
+              exact-active-class="underline"
+            >
+              {{ item.text }}
+      </nuxt-link>
           </b-navbar-nav>
         </b-collapse>
       </b-container>
