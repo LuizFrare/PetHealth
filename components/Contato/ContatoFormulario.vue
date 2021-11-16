@@ -23,7 +23,7 @@
                 <div class="inputfield">
                   <label>{{$t("contactus.form1.text4")}}</label>
                   <div class="custom_select">
-                    <select v-model="gender">
+                    <select v-model="gender" required>
                       <option value="">{{$t("contactus.form1.text10")}}</option>
                       <option value="Macho">{{$t("contactus.form1.text11")}}</option>
                       <option value="Femea">{{$t("contactus.form1.text12")}}</option>
@@ -98,6 +98,9 @@ export default {
     text: { required, minLength: minLength(50) },
     check: { required },
     number:{ required, numeric },
+    gender: {
+    required
+    }
   },
 
   methods: {
@@ -115,9 +118,7 @@ export default {
      this.resultado = "Enviado!";
       this.$v.$reset();
     },
-  },
-
-
+  }
 }
 /*
 export default {

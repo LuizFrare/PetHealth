@@ -21,9 +21,10 @@
             <p class="texto"><span class="azulMaroto">{{ $t("examspage.textblue") }} </span>{{ $t("examspage.text1") }}</p> <p class="texto"> {{ $t("examspage.text2") }}
             </p>
         </div>
-        <Laboratorio/>
-        <Vacinas/>
+        <ExamesLaboratorio id="laboratorio"/>
+        <ExamesVacinas id="vacinas"/>
       <redes/>
+      <top/>
   </main>
 </template>
 

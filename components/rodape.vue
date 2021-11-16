@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <div>
     <footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -16,20 +16,20 @@
 	</li>
 	<li id="menu-item-475" class="menu-item menu-item-type-post_type_archive menu-item-object-exames menu-item-has-children menu-item-475"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.examstext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-476"><NuxtLink to="/coletas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.laboratory") }}</span></NuxtLink></li>
-	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><NuxtLink to="/coletas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.vaccines") }}</span></NuxtLink></li>
+	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-476"><NuxtLink to="/coletas#laboratorio" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.laboratory") }}</span></NuxtLink></li>
+	<li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-exames menu-item-477"><NuxtLink to="/coletas#vacinas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.exams.vaccines") }}</span></NuxtLink></li>
 	</ul>
 	</li>
 	<li id="menu-item-478" class="menu-item menu-item-type-post_type_archive menu-item-object-servicos menu-item-has-children menu-item-478"><a class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.famousracestext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-480"><NuxtLink to="/gatos" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.persian") }}</span></NuxtLink></li>
-	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-488"><NuxtLink to="/caes" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.siberianHusky") }}</span></NuxtLink></li>
+	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-480"><NuxtLink to="/gatos#persa" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.persian") }}</span></NuxtLink></li>
+	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-servicos menu-item-488"><NuxtLink to="/caes#husky" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.famousraces.siberianHusky") }}</span></NuxtLink></li>
 	</ul>
 	</li>
 	<li id="menu-item-485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-485"><a class="menu-image-title-after" tag="a"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.contacttext") }}</span></a>
 	<ul class="sub-menu">
-	<li id="menu-item-486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486"><NuxtLink to="/contato" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.contactus") }}</span></NuxtLink></li>
-	<li id="menu-item-12355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12355"><NuxtLink to="/contato" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.join") }}</span></NuxtLink></li>
+	<li id="menu-item-486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486"><NuxtLink to="/contato#formulario" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.contactus") }}</span></NuxtLink></li>
+	<li id="menu-item-12355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12355"><NuxtLink to="/contato#vagas" class="menu-image-title-after"><span class="menu-image-title-after menu-image-title">{{ $t("footer.contact.join") }}</span></NuxtLink></li>
 	</ul>
 	</li>
 	</ul>            
@@ -51,8 +51,9 @@
         />
   </a>
 	</div>
-    </section>
+    </div>
 </template>
+
 <script>
 export default {
   computed: {

@@ -148,12 +148,12 @@ dogspage:{
         text8: "Essa raça é bem pequena e meiga, sendo uma ótima opção para qualquer lar.",
     },
 
-    yellowtext4: "Splitz-alemão,",
+    yellowtext4: "Spitz-alemão,",
     text5: "o pequeno abundante!",
 
     bannersplitz: {
         text1: "Quais as principais características",
-        text2: "dos Splitzes Alemães?",
+        text2: "dos Spitzes Alemães?",
         text3: "Peso",
         text4: "Um exemplar adulto pode chegar a cerca de 4 quilogramas.",
         text5: "Expectativa de vida:",

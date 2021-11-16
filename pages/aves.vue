@@ -24,6 +24,7 @@
           </div>
       <aves/>
       <redes/>
+      <top/>
   </main>
 </template>
 

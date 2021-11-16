@@ -33,6 +33,7 @@
                 <button class="btn" :disabled="$v.$error">{{$t("contactus.form2.text6")}}</button> 
               </div>
           </div>
+          <p style=" color: #1fb866;"> {{ resultado }}</p>
           </form>
 </template>
 
@@ -52,7 +53,6 @@ export default {
   validations: {
     nameVagas: { required, minLength: minLength(1) },
     emailVagas: { required, email },
-    vaga: { required },
   },
 
    methods: {

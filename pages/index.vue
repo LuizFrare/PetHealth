@@ -14,14 +14,15 @@
                 </p>
             </div>
         </div>
-        <banner />
-        <cards />
+        <HomeBanner/>
+        <HomeCards/>
         <div class="background">
             <p data-aos="fade-left" class="texto branco marginTexto" style="margin:2rem">
                 {{ $t("index.texthome3") }}
             </p>
         </div>
         <redes />
+        <top/>
     </main>
 </template>
 
@@ -243,6 +244,18 @@ html{
 .breadcrumbs__link{
 	text-decoration: none;
 	color:#100f1d;
+}
+
+/* Topo */
+#link-topo{
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  padding: 1.1em;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50px;
 }
 
 /*img cachorro*/

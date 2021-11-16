@@ -23,16 +23,17 @@
           <div class="textoInicial1">
             <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext2") }} </span>{{ $t("catspage.text3") }}</p>
           </div>
-      <persa/>
+      <GatosPersa id="persa"/>
       <div class="textoInicial">
             <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext3") }} </span>{{ $t("catspage.text4") }}</p>
           </div>
-      <maine/>
+      <GatosMaine/>
       <div class="textoInicial">
             <p class="texto"><span class="roxoMaroto">{{ $t("catspage.purpletext4") }} </span>{{ $t("catspage.text5") }}</p>
           </div>
-          <ragdoll/>
-          <redes/>
+      <GatosRagdoll/>
+        <redes/>
+        <top/>
   </main>
 </template>
 

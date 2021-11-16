@@ -4,7 +4,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	  <bgContato />
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs" id="formulario">
 		<li class="breadcrumbs__item">
 			<NuxtLink to="/" class="breadcrumbs__link" tag="a">{{ $t("menu.home") }}</NuxtLink>
 		</li>
@@ -17,12 +17,13 @@
 			<NuxtLink to="/contato" class="breadcrumbs__link breadcrumbs__link--active">{{ $t("menu.contact") }}</NuxtLink>
 		</li>
 	      </ul>
-      <formulario/>
-        <div class="backgroundFaq">
+      <ContatoFormulario/>
+        <div class="backgroundFaq" id="vagas">
           <p data-aos="fade-left" class="texto branco marginTexto">{{$t("contactus.text1")}}</p>
         </div>
-      <radio/>
+      <ContatoVagas/>
       <redes/>
+	  <top/>
     </main>
 </template>
 
